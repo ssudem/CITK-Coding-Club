@@ -1,0 +1,115 @@
+import "./navbar.css";
+import { FaHamburger } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
+import { useState, useEffect, useRef } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+
+import citklogo from "../../assets/citklogo.png"; // adjust the path as needed
+import CClogo from "../../assets/CClogo.png"; // adjust the path as needed
+
+// Then use:
+{
+  /* <img src={citklogo} height="120px" alt="logo" /> */
+}
+
+function Navbar() {
+  const menuRef = useRef();
+  // Check if the current page is home
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  const [isMobile, setIsMobile] = useState(false); // to toggle menu( mobile version)
+  const [scrolled, setScrolled] = useState(false); // to change the header style on scroll
+
+  function handleToggle() {
+    setIsMobile(!isMobile);
+  }
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 10);
+      setIsMobile(false); // Close hamburger menu on scroll
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    if (!isMobile) return;
+
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMobile(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isMobile]);
+
+  return (
+    <header
+      className={
+        isHome
+          ? `${scrolled ? "scrolled" : ""} ${isMobile ? "active-nav" : ""}`
+          : "scrolled"
+      }
+    >
+      <div className="container">
+        <div className="content">
+          <div className="logo">
+            <img src={CClogo} alt="CC" />
+            <span>X</span>
+            <img src={citklogo} alt="CITK" />
+          </div>
+          <nav
+            ref={menuRef}
+            className={isMobile ? "mobile-nav" : "desktop-nav"}
+          >
+            <ul className="nav-NavLinks">
+              <li onClick={() => setIsMobile(false)}>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) => (isActive ? "active-link" : "")}
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li onClick={() => setIsMobile(false)}>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) => (isActive ? "active-link" : "")}
+                >
+                  About Us
+                </NavLink>
+              </li>
+              <li onClick={() => setIsMobile(false)}>
+                <NavLink
+                  to="/team"
+                  className={({ isActive }) => (isActive ? "active-link" : "")}
+                >
+                  Team
+                </NavLink>
+              </li>
+              <li onClick={() => setIsMobile(false)}>
+                <NavLink
+                  to="/events"
+                  className={({ isActive }) => (isActive ? "active-link" : "")}
+                >
+                  Events
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+          <div className="hem-menu">
+            <button onClick={handleToggle}>
+              {!isMobile ? <FaHamburger /> : <ImCross />}
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+export default Navbar;

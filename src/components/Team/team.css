@@ -1,0 +1,68 @@
+.container {
+  max-width: 90rem;
+  margin: auto;
+}
+
+.container > h1 {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: min(3rem, 10vw);
+  font-weight: 900;
+}
+
+.react-dropdown-select-input {
+  /* useless */
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.dropdown,
+.dropdown .react-dropdown-select,
+.dropdown .react-dropdown-select-dropdown {
+  width: 6rem;
+}
+
+.react-dropdown-select {
+  background-color: rgb(52, 52, 255);
+  color: white;
+  border-radius: 10px !important;
+}
+.react-dropdown-select-input::placeholder {
+  color: white; /* Replace with your desired color */
+  opacity: 1; /* Ensure the color is visible */
+}
+
+.react-dropdown-select-dropdown {
+  color: black;
+  border-radius: 10px !important;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  height: 8rem;
+
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.dropdown-container > span {
+  margin-left: 2rem;
+  font-size: larger;
+  font-weight: 900;
+}
+
+.team-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
