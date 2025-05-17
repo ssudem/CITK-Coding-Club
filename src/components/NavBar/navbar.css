@@ -39,8 +39,8 @@ li > a {
   font-size: 1.2rem;
   font-weight: 550;
   text-decoration: none;
-  padding: 0.3rem 0.5rem;
-  border-radius: 10%;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.8rem;
   transition: all 0.3s ease-in-out;
   &:hover {
     background-color: #6881ff;
@@ -92,6 +92,10 @@ nav > ul {
   gap: 2rem;
 }
 
+li > a {
+  padding: 0.5rem 1.2rem;
+}
+
 button {
   cursor: pointer;
 }
@@ -126,6 +130,7 @@ button {
     color: black;
     background-color: var(--bgcolor2);
     font-size: 2.5rem;
+    padding-right: 2rem;
   }
 
   .desktop-nav {

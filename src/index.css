@@ -2,6 +2,7 @@ body {
   height: 100vh;
   width: 100vw;
   /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
+  overflow-x: hidden;
 }
 
 .glass {

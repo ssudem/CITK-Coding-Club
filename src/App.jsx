@@ -10,7 +10,7 @@ import AboutUs from "./components/AboutUs/AboutUs.jsx";
 import Events from "./components/Events/Events.jsx";
 import Team from "./components/Team/Team.jsx";
 import OurDomain from "./components/OurDomain/OurDomain.jsx";
-import ProfileCard from "./components/ProfileCard/ProfileCard.jsx";
+import TeamSlider from "./components/TeamSlider/TeamSlider.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,8 +20,9 @@ const router = createBrowserRouter([
         <Navbar />
         <Home />
         <OurDomain />
-        <AboutUs />
-        <Team />
+        {/* <AboutUs /> */}
+        <TeamSlider />
+        {/* <Team /> */}
       </>
     ),
   },
