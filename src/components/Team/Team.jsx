@@ -9,8 +9,14 @@ function Team() {
   const [year, setYear] = useState("2023");
 
   return (
-    <div className="container">
-      <h1>Meet our amazing team!</h1>
+    <div className="container team-section">
+      <h1>OUR AMAZING TEAM</h1>
+      <p>
+        We are a group of passionate individuals who are dedicated to
+        collaborating and creating amazing things together. Our team is
+        committed to continuous learning and growth, and we are always looking
+        for new ways to improve our skills and knowledge.
+      </p>
       <div className="dropdown-container">
         <span> Year : </span>
         <Select

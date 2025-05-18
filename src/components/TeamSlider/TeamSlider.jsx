@@ -16,6 +16,7 @@ import sudem from "../../assets/PeopleImg/sudem.jpeg";
 import { useNavigate } from "react-router-dom";
 
 export default function TeamSlider() {
+  const year = "2023";
   const navigate = useNavigate();
   function handleClick() {
     navigate("/team"); // Navigate to the "/about" route
@@ -25,7 +26,7 @@ export default function TeamSlider() {
       <section className="home-team-section">
         <div className="container home-team-container">
           <div className="member-heading">
-            <h1>Members</h1>
+            <h1>TEAM MEMBERS {year}</h1>
             <button onClick={handleClick}>View All</button>
           </div>
           <Swiper

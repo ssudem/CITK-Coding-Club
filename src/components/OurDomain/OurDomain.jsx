@@ -28,7 +28,12 @@ const OurDomain = () => {
 
   return (
     <div className="ourdomain">
-      <h1 style={{ textAlign: "center" }}>Our Domain</h1>
+      <h1 style={{ textAlign: "center" }}>OUR DOMAIN</h1>
+      <p>
+        We cover most of the domain of programming like competitive programming,
+        devlopment related field, etc.We are making small teams on every domain
+        so that we can grow in each and every domain.
+      </p>
 
       {/* <div className="scroller" data-direction="left" data-speed="slow"> */}
       {/* <div className="scroller__inner">

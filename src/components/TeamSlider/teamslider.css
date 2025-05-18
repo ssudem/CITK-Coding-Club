@@ -22,10 +22,11 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
 }
 .member-heading > h1 {
-  font-size: min(3rem, 10vw);
+  max-width: 60%;
+  font-size: min(2rem, 7vw);
   font-weight: 600;
 }
 .member-heading > button {
@@ -63,4 +64,12 @@
   align-items: center;
   flex-direction: column;
   /* gap: 1rem; */
+}
+
+@media screen and (max-width: 768px) {
+  .member-heading > button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+  }
 }

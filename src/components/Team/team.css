@@ -3,11 +3,18 @@
   margin: auto;
 }
 
-.container > h1 {
+.team-section > h1 {
   padding-top: 3rem;
   text-align: center;
   font-size: min(3rem, 10vw);
+  /* font-size: min(1.2rem, 5vw); */
   font-weight: 900;
+}
+.team-section > p {
+  width: 100%;
+  font-size: min(1.2rem, 5vw);
+  text-align: center;
+  padding: 1rem 2rem 1rem 1rem; /* top right bottom left */
 }
 
 .react-dropdown-select-input {
