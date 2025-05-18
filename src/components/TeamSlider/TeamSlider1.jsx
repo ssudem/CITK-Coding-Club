@@ -6,7 +6,7 @@ import "swiper/css/effect-coverflow";
 // import "swiper/css/autoplay";
 import "swiper/css/navigation";
 
-import "./teamslider.css";
+import "./teamslider1.css";
 
 import { EffectCoverflow, Autoplay } from "swiper/modules";
 

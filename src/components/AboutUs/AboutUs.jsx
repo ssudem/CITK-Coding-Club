@@ -8,7 +8,7 @@ function AboutUs() {
     navigate("/team"); // Navigate to the "/about" route
   }
   return (
-    <section className="about-section">
+    <section className="about-section" id="about-section">
       <div className="container about-container">
         <div className="about">
           <h1>About Us</h1>

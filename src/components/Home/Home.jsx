@@ -6,8 +6,9 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate from react
 function Home() {
   const navigate = useNavigate();
   function handleClick() {
-    navigate("/about"); // Navigate to the "/about" route
+    navigate("/events"); // Navigate to the "/about" route
   }
+
   return (
     <section className="home-section">
       <div className="container home-container">
@@ -22,7 +23,7 @@ function Home() {
             enhance their coding skills and become part of a broader developer
             community.
           </p>
-          <span onClick={handleClick}>Know more &#8594;</span>
+          <span onClick={handleClick}>Events &#8594;</span>
         </div>
         <div className="HomeImg">
           <img src={HomeImg} alt="Home" />

@@ -1,0 +1,138 @@
+/* .event-container {
+    width: min(20rem, 70vw);
+  height: min(23rem, 85vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: linear-gradient(to right, #fcfcfc, #ffffff);
+  box-sizing: border-box;
+}
+
+.event-heading {
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px 15px 10px 15px;
+  color: #38bdf8;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.event-heading:hover {
+  background: #38bdf8;
+  color: rgb(243, 242, 242);
+} */
+.event-card {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 0%);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: min(19rem, 75vw);
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.event-image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3; /* Ensures 3:2 ratio */
+  overflow: hidden;
+  background: #e2ebf0;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.event-date {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #6c5ce7;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.event-content {
+  padding: 1rem;
+}
+
+.event-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.event-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #222;
+  min-height: 6rem;
+  text-align: center;
+}
+
+.event-button-register {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #333;
+  background: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: #333;
+    color: white;
+  }
+}
+
+.event-button-registerclosed {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #333;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  /* .event-card {
+    max-width: 98vw; 
+    width: 100%;
+    min-height: 320px;
+    border-radius: 10px;
+  } */
+  .event-content {
+    padding: 0.7rem;
+  }
+  .event-title {
+    font-size: 0.95rem;
+  }
+  .event-meta {
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .event-button {
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+  }
+  .event-date {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 10px;
+  }
+}

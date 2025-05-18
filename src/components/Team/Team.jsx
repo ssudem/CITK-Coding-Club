@@ -9,7 +9,7 @@ function Team() {
   const [year, setYear] = useState("2023");
 
   return (
-    <div className="container team-section">
+    <section className="container team-section">
       <h1>OUR AMAZING TEAM</h1>
       <p>
         We are a group of passionate individuals who are dedicated to
@@ -45,7 +45,7 @@ function Team() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 export default Team;

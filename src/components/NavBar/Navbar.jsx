@@ -80,7 +80,7 @@ function Navbar() {
                   to="/about"
                   className={({ isActive }) => (isActive ? "active-link" : "")}
                 >
-                  About Us
+                  About
                 </NavLink>
               </li>
               <li onClick={() => setIsMobile(false)}>

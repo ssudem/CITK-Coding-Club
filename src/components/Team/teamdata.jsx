@@ -5,6 +5,17 @@ import sudem3 from "../../assets/PeopleImg/sudem2.jpeg";
 const team = {
   2023: [
     {
+      image: sudem3,
+      name: "Jivan Narzary",
+      title: "Web Developer",
+      socialmedia: {
+        instagram: "https://www.instagram.com",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com",
+        github: "#",
+      },
+    },
+    {
       image: sudem1,
       name: "Sudem Narzary ",
       title: "Web Developer",

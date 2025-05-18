@@ -4,7 +4,8 @@
 }
 
 .team-section > h1 {
-  padding-top: 3rem;
+  padding: 3rem 2rem 0 2rem; /* top right bottom left */
+
   text-align: center;
   font-size: min(3rem, 10vw);
   /* font-size: min(1.2rem, 5vw); */
@@ -22,23 +23,25 @@
   position: fixed;
   z-index: 0;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 .dropdown,
 .dropdown .react-dropdown-select,
 .dropdown .react-dropdown-select-dropdown {
+  /* position: fixed; */
   width: 6rem;
 }
 
 .react-dropdown-select {
+  width: 6rem !important;
   background-color: rgb(52, 52, 255);
   color: white;
   border-radius: 10px !important;
 }
-.react-dropdown-select-input::placeholder {
-  color: white; /* Replace with your desired color */
-  opacity: 1; /* Ensure the color is visible */
+
+.react-dropdown-select-content {
+  padding-left: 1rem !important;
 }
 
 .react-dropdown-select-dropdown {
@@ -70,6 +73,5 @@
   flex-wrap: wrap;
   gap: 2rem;
 
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
+  padding: 1.2rem;
 }
