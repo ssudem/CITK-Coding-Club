@@ -112,6 +112,9 @@ button {
 
 /* media query */
 @media screen and (max-width: 768px) {
+  .logo {
+    margin-left: 1rem;
+  }
   .logo > img {
     height: 3rem;
   }
@@ -130,7 +133,7 @@ button {
     color: black;
     background-color: var(--bgcolor2);
     font-size: 2.5rem;
-    padding-right: 2rem;
+    padding-right: 1rem;
     padding-top: 0.5rem;
   }
 

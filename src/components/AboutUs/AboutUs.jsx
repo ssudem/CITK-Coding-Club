@@ -2,7 +2,7 @@ import aboutImg from "../../assets/AboutImg.png";
 import "./aboutus.css";
 import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
 
-function AboutUs() {
+function AboutUs(props) {
   const navigate = useNavigate();
   function handleClick() {
     navigate("/team"); // Navigate to the "/about" route
@@ -27,7 +27,9 @@ function AboutUs() {
             the fresher's mentorship program. We hope that we are able to take
             this momentum forward.
           </p>
-          <span onClick={handleClick}>View Team &#8594; </span>
+          {props.isTeam ? (
+            <span onClick={handleClick}>View Team &#8594; </span>
+          ) : null}
         </div>
         <div className="about-img">
           <img src={aboutImg} alt="About Us" />

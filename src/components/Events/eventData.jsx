@@ -7,7 +7,7 @@ const event = {
   recent: [
     {
       registeration: true,
-      registerationLink: "https://www.google.com",
+      registerationLink: "https://www.google.co.in/",
       Eventimage: E2image,
       Eventdate: "8th April 2025",
       medium: "Google meet",
@@ -17,6 +17,7 @@ const event = {
     },
     {
       registeration: true,
+      registerationLink: "https://www.google.co.in/",
       Eventimage: E3image,
       Eventdate: "8th April 2025",
       medium: "Google meet",

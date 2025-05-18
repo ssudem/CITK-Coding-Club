@@ -1,5 +1,5 @@
 .home-section {
-  width: 100vw;
+  width: 100%;
 }
 
 .home-container {
@@ -67,7 +67,7 @@
     text-align: center;
     font-size: 2rem;
     font-weight: bolder;
-    max-width: 80%;
+    max-width: 100%;
   }
   .welcome > p {
     text-align: start;
@@ -76,19 +76,3 @@
     max-width: 250px;
   }
 }
-
-/* @media (max-width: 600px) {
-  .container {
-    padding: 1.2rem 0.2rem;
-  }
-  .welcome h1 {
-    font-size: 1.5rem;
-  }
-  .welcome p {
-    font-size: 1rem;
-  }
-  .HomeImg img {
-    max-width: 180px;
-    border-radius: 1rem;
-  }
-} */

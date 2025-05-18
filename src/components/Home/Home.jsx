@@ -23,7 +23,7 @@ function Home() {
             enhance their coding skills and become part of a broader developer
             community.
           </p>
-          <span onClick={handleClick}>Events &#8594;</span>
+          <span onClick={handleClick}>View Events &#8594;</span>
         </div>
         <div className="HomeImg">
           <img src={HomeImg} alt="Home" />

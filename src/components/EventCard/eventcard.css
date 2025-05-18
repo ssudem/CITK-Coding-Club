@@ -1,27 +1,3 @@
-/* .event-container {
-    width: min(20rem, 70vw);
-  height: min(23rem, 85vw);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1.5rem;
-  background: linear-gradient(to right, #fcfcfc, #ffffff);
-  box-sizing: border-box;
-}
-
-.event-heading {
-  border-style: solid;
-  border-width: 2px;
-  padding: 10px 15px 10px 15px;
-  color: #38bdf8;
-  font-family: "Poppins";
-  font-size: 1.4rem;
-  margin-bottom: 1.5rem;
-}
-.event-heading:hover {
-  background: #38bdf8;
-  color: rgb(243, 242, 242);
-} */
 .event-card {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 0%);
   border-radius: 16px;
@@ -87,14 +63,17 @@
 .event-button-register {
   padding: 0.5rem 1.5rem;
   border: 1px solid #333;
-  background: white;
+  background: rgb(0, 0, 0);
+  color: white;
   border-radius: 20px;
   font-size: 0.9rem;
   cursor: pointer;
   transition: 0.3s;
   &:hover {
     background-color: #333;
-    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 }
 
@@ -103,9 +82,9 @@
   border: 1px solid #333;
   border-radius: 20px;
   font-size: 0.9rem;
-  cursor: pointer;
-  background-color: #333;
-  color: white;
+  cursor: default;
+  color: rgb(0, 0, 0);
+  background-color: none;
 }
 
 @media (max-width: 600px) {

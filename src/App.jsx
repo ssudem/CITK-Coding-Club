@@ -11,7 +11,7 @@ import AboutUs from "./components/AboutUs/AboutUs.jsx";
 import Events from "./components/Events/Events.jsx";
 import Team from "./components/Team/Team.jsx";
 import OurDomain from "./components/OurDomain/OurDomain.jsx";
-import TeamSlider1 from "./components/TeamSlider/TeamSlider1.jsx";
+import TeamSlider from "./components/TeamSlider/TeamSlider.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
 function ScrollToTop() {
@@ -33,7 +33,8 @@ const router = createBrowserRouter([
         <Navbar />
         <Home />
         <OurDomain />
-        <AboutUs />
+        <AboutUs isTeam={false} />
+        <TeamSlider />
         <Footer />
       </>
     ),
@@ -44,8 +45,7 @@ const router = createBrowserRouter([
       <>
         <ScrollToTop />
         <Navbar />
-        <AboutUs />
-        <TeamSlider1 />
+        <AboutUs isTeam={true} />
         <Footer />
       </>
     ),

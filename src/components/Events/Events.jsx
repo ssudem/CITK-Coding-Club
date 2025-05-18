@@ -30,21 +30,6 @@ function Events() {
         </button>
       </div>
 
-      {/* <div>
-        <button
-          className={activeTab === "recent" ? "active" : ""}
-          onClick={() => setActiveTab("recent")}
-        >
-          Recent Events
-        </button>
-        <button
-          className={activeTab === "past" ? "active" : ""}
-          onClick={() => setActiveTab("past")}
-        >
-          Past Events
-        </button>
-      </div> */}
-
       <div className="event-container">
         {event[activeTab].map((ev, idx) => (
           <EventCard key={idx} {...ev} />
