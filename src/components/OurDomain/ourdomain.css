@@ -76,7 +76,7 @@
 }
 
 .scroller[data-speed="slow"] {
-  --_animation-duration: 150s;
+  --_animation-duration: 140s;
 }
 
 @keyframes scroll {
@@ -88,6 +88,9 @@
 @media screen and (max-width: 768px) {
   .ourdomain {
     padding: 1rem 0;
+  }
+  .ourdomain > p {
+    line-height: 1.5rem;
   }
   .scroller__inner > img {
     height: 5rem;

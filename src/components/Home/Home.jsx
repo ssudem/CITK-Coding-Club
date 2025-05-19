@@ -25,7 +25,7 @@ function Home() {
           </p>
           <span onClick={handleClick}>View Events &#8594;</span>
         </div>
-        <div className="HomeImg">
+        <div className="HomeImg ">
           <img src={HomeImg} alt="Home" />
         </div>
       </div>

@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { BrowserRouter, RouterProvider } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
-import "./App.css";
 
 import Navbar from "./components/NavBar/Navbar.jsx";
 import Home from "./components/Home/Home.jsx";

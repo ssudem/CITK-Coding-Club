@@ -51,9 +51,6 @@ const OurDomain = () => {
           {languageImages.map((imgSrc, idx) => (
             <img src={imgSrc} alt={`language-${idx}`} key={idx} />
           ))}
-          {languageImages.map((imgSrc, idx) => (
-            <img src={imgSrc} alt={`language-${idx}`} key={idx} />
-          ))}
         </div>
       </div>
     </div>

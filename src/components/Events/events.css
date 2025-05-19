@@ -1,6 +1,7 @@
 .event-section > h1 {
   padding: 1rem 2rem 0 2rem; /* top right bottom left */
 
+  color: #1a237e;
   text-align: center;
   font-size: min(3rem, 10vw);
   /* font-size: min(1.2rem, 5vw); */
@@ -11,7 +12,7 @@
   width: 100%;
   font-size: min(1.2rem, 5vw);
   text-align: center;
-  padding: 1rem 2rem 1rem 1rem; /* top right bottom left */
+  padding: 2rem; /* top right bottom left */
 }
 
 .event-container {
@@ -22,7 +23,7 @@
   flex-wrap: wrap;
   gap: 2rem;
 
-  padding: 1.2rem;
+  padding: 2rem 1.2rem;
 }
 
 .toggle-wrapper {
@@ -43,7 +44,7 @@
   padding: 10px 24px;
   font-size: 1rem;
   font-weight: 500;
-  color: #4b5563;
+  color: #000000;
   background: transparent;
   border: none;
   outline: none;

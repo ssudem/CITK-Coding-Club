@@ -37,14 +37,6 @@ const EventCard = (event) => {
             Resgistration Closed
           </button>
         )}
-        {/* <button className="event-button-register">
-          <a href="www.google.com" target="_blank">
-            Register here
-          </a>
-        </button> */}
-        {/* <button className="event-button-registerclosed">
-          Resgistration Closed
-        </button> */}
       </div>
     </div>
   );

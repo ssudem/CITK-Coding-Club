@@ -84,16 +84,10 @@
   font-size: 0.9rem;
   cursor: default;
   color: rgb(0, 0, 0);
-  background-color: none;
+  background-color: #f6f6f6;
 }
 
-@media (max-width: 600px) {
-  /* .event-card {
-    max-width: 98vw; 
-    width: 100%;
-    min-height: 320px;
-    border-radius: 10px;
-  } */
+@media screen and (max-width: 600px) {
   .event-content {
     padding: 0.7rem;
   }

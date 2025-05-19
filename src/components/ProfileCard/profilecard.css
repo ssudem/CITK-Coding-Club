@@ -52,7 +52,7 @@ a {
 }
 
 .name {
-  font-size: 1.5rem;
+  font-size: min(1.5rem, 30vw);
   font-weight: 700;
   /* margin-top: 1rem; */
 }
@@ -66,12 +66,25 @@ a {
 .social-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
+  width: 100%;
   font-size: min(1.5rem, 5vw);
 }
 
 .social-icons svg:hover {
+  transition: all 0.3s ease-in-out;
   transform: scale(1.5);
   color: rgb(159, 228, 255);
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-card {
+    padding: 1rem;
+  }
+  .social-icons {
+    width: 80%;
+    justify-content: space-evenly;
+  }
 }
