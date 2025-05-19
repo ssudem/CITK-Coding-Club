@@ -14,12 +14,13 @@ import ProfileCard from "../ProfileCard/ProfileCard.jsx";
 import sudem from "../../assets/PeopleImg/sudem.jpeg";
 
 import { useNavigate } from "react-router-dom";
+import team from "../Team/teamdata.jsx";
 
 function TeamSlider() {
   const year = "2023";
   const navigate = useNavigate();
   function handleClick() {
-    navigate("/team"); // Navigate to the "/about" route
+    navigate("/team");
   }
   return (
     <section className="home-team-section">
@@ -38,76 +39,11 @@ function TeamSlider() {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <ProfileCard
-              // key={member.name + index}
-              image={sudem}
-              name={"sudem narzary"}
-              title={"web developer"}
-              socialmedia={{
-                instagram: "https://www.instagram.com",
-                twitter: "https://www.twitter.com",
-                linkedin: "https://www.linkedin.com",
-                github: "https://www.github.com",
-              }}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProfileCard
-              // key={member.name + index}
-              image={sudem}
-              name={"sudem narzary"}
-              title={"web developer"}
-              socialmedia={{
-                instagram: "https://www.instagram.com",
-                twitter: "https://www.twitter.com",
-                linkedin: "https://www.linkedin.com",
-                github: "https://www.github.com",
-              }}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProfileCard
-              // key={member.name + index}
-              image={sudem}
-              name={"sudem narzary"}
-              title={"web developer"}
-              socialmedia={{
-                instagram: "https://www.instagram.com",
-                twitter: "https://www.twitter.com",
-                linkedin: "https://www.linkedin.com",
-                github: "https://www.github.com",
-              }}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProfileCard
-              // key={member.name + index}
-              image={sudem}
-              name={"sudem narzary"}
-              title={"web developer"}
-              socialmedia={{
-                instagram: "https://www.instagram.com",
-                twitter: "https://www.twitter.com",
-                linkedin: "https://www.linkedin.com",
-                github: "https://www.github.com",
-              }}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProfileCard
-              // key={member.name + index}
-              image={sudem}
-              name={"sudem narzary"}
-              title={"web developer"}
-              socialmedia={{
-                instagram: "https://www.instagram.com",
-                twitter: "https://www.twitter.com",
-                linkedin: "https://www.linkedin.com",
-                github: "https://www.github.com",
-              }}
-            />
-          </SwiperSlide>
+          {team[year].map((member, idx) => (
+            <SwiperSlide key={idx}>
+              <ProfileCard {...member} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>
