@@ -4,7 +4,7 @@
 }
 
 .team-section > h1 {
-  padding: 3rem 2rem 0 2rem; /* top right bottom left */
+  padding: 2rem 2rem 0 2rem; /* top right bottom left */
   color: #1a237e;
   text-align: center;
   font-size: min(3rem, 10vw);

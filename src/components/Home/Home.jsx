@@ -1,4 +1,4 @@
-import HomeImg from "../../assets/HomeImg.png";
+import HomeImg from "../../assets/HomeImg.webp";
 import "./home.css"; // Import the CSS file for styling
 
 import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
@@ -23,7 +23,7 @@ function Home() {
             enhance their coding skills and become part of a broader developer
             community.
           </p>
-          <span onClick={handleClick}>View Events &#8594;</span>
+          <button onClick={handleClick}>View Events &#8594;</button>
         </div>
         <div className="HomeImg ">
           <img src={HomeImg} alt="Home" />

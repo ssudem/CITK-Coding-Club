@@ -35,7 +35,7 @@
   line-height: 1.6;
 }
 
-.welcome > span {
+.welcome > button {
   padding: 0.5rem 1rem;
   width: 9rem;
   border: 1px solid black;

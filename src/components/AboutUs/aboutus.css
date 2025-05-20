@@ -34,7 +34,7 @@
   line-height: 1.6;
 }
 
-.about > span {
+.about > button {
   display: inline;
   padding: 0.5rem 1rem;
   width: 9rem;

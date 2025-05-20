@@ -128,5 +128,7 @@
   }
   .mySwiper {
     padding: 2rem 3rem;
+    cursor: default !important;
+    -webkit-tap-highlight-color: transparent; /* Removes tap highlight on iOS/Android */
   }
 }

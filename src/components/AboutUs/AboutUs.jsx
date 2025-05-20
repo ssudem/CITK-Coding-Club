@@ -1,4 +1,4 @@
-import aboutImg from "../../assets/AboutImg.png";
+import aboutImg from "../../assets/AboutImg.webp";
 import "./aboutus.css";
 import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
 
@@ -24,7 +24,7 @@ function AboutUs(props) {
             forward.
           </p>
           {props.isTeam ? (
-            <span onClick={handleClick}>View Team &#8594;</span>
+            <button onClick={handleClick}>View Team &#8594;</button>
           ) : null}
         </div>
         <div className="about-img">

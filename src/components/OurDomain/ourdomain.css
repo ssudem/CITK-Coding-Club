@@ -76,7 +76,7 @@
 }
 
 .scroller[data-speed="slow"] {
-  --_animation-duration: 140s;
+  --_animation-duration: 90s;
 }
 
 @keyframes scroll {
@@ -97,5 +97,8 @@
   }
   .scroller__inner {
     gap: 0.5rem;
+  }
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
   }
 }

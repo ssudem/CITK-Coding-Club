@@ -1,14 +1,13 @@
 import E1image from "../../assets/EventImg/E1.webp";
 import E2image from "../../assets/EventImg/E2.webp";
 import E3image from "../../assets/EventImg/E3.webp";
-// Event Image Link ->  "src/assets/EventImg/EventImage.webp"
 
 const event = {
   recent: [
     {
       registeration: true,
       registerationLink: "https://www.google.com",
-      Eventimage: "src/assets/EventImg/E3.webp",
+      Eventimage: E3image,
       Eventdate: "8th April 2025",
       medium: "Google meet",
       time: "7:00pm - 8:00 pm",
@@ -37,7 +36,7 @@ const event = {
   past: [
     {
       registeration: false,
-      Eventimage: E3image,
+      Eventimage: E1image,
       Eventdate: "8th April 2025",
       medium: "Google meet",
       time: "7:00pm - 8:00 pm",
@@ -46,7 +45,7 @@ const event = {
     },
     {
       registeration: false,
-      Eventimage: E1image,
+      Eventimage: E2image,
       Eventdate: "12th March 2025",
       medium: "Auditorium",
       time: "5:00pm - 7:00 pm",
