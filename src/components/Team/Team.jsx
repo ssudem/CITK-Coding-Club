@@ -6,7 +6,7 @@ import "./team.css";
 import team from "./teamdata.jsx"; // Import the team data
 
 function Team() {
-  const [year, setYear] = useState("2023");
+  const [year, setYear] = useState("2024");
 
   return (
     <section className="container team-section">
@@ -26,7 +26,7 @@ function Team() {
             { value: "2024", label: "2024" },
             // { value: "2025", label: "2025" },
           ]}
-          values={[{ value: "2023", label: "2023" }]}
+          values={[{ value: year, label: year }]}
           placeholder={year}
           searchable={false}
           // onChange={(info) => console.log(info[0].value)}

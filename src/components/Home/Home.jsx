@@ -26,7 +26,7 @@ function Home() {
           <button onClick={handleClick}>View Events &#8594;</button>
         </div>
         <div className="HomeImg ">
-          <img src={HomeImg} alt="Home" />
+          <img src={HomeImg} alt="Home" loading="lazy" />
         </div>
       </div>
     </section>

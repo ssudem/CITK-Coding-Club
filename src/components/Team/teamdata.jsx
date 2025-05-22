@@ -1,13 +1,21 @@
-import sudem1 from "../../assets/PeopleImg/sudem.jpeg";
-import sudem2 from "../../assets/PeopleImg/sudem1.jpeg";
-import sudem3 from "../../assets/PeopleImg/sudem2.jpeg";
-
 // image link -> "src/assets/PeopleImg/YourImageName.png"
+// 2024 :-
+import sudem from "../../assets/PeopleImg/sudem.webp";
+import dibyajyoti from "../../assets/PeopleImg/Dibyajyoti.webp";
+import jivan from "../../assets/PeopleImg/H_Jivan_Singha.webp";
+import mayuri from "../../assets/PeopleImg/MAYURI_BAYAN.webp";
+import mohd from "../../assets/PeopleImg/MOHD_ZAID.webp";
+import nabadeep from "../../assets/PeopleImg/nabadeep_das.webp";
+import parinita from "../../assets/PeopleImg/PARINITA_RAY.webp";
+import samujjal from "../../assets/PeopleImg/SAMUJJAL_DUTTA.jpeg";
 
+//2025:-
+import sudem1 from "../../assets/PeopleImg/sudem1.jpeg";
+import sudem2 from "../../assets/PeopleImg/sudem2.jpeg";
 const team = {
   2023: [
     {
-      image: sudem1,
+      image: sudem,
       name: "Rohit Sharma",
       title: "Frontend Developer",
       socialmedia: {
@@ -29,7 +37,7 @@ const team = {
       },
     },
     {
-      image: sudem3,
+      image: sudem2,
       name: "Aman Verma",
       title: "UI/UX Designer",
       socialmedia: {
@@ -40,7 +48,7 @@ const team = {
       },
     },
     {
-      image: sudem1,
+      image: sudem,
       name: "Sneha Patel",
       title: "Full Stack Developer",
       socialmedia: {
@@ -62,7 +70,7 @@ const team = {
       },
     },
     {
-      image: sudem3,
+      image: sudem2,
       name: "Anjali Mehra",
       title: "Project Manager",
       socialmedia: {
@@ -73,7 +81,7 @@ const team = {
       },
     },
     {
-      image: sudem1,
+      image: sudem,
       name: "Karan Joshi",
       title: "Mobile Developer",
       socialmedia: {
@@ -95,7 +103,7 @@ const team = {
       },
     },
     {
-      image: sudem3,
+      image: sudem2,
       name: "Arjun Singh",
       title: "Cloud Architect",
       socialmedia: {
@@ -106,7 +114,7 @@ const team = {
       },
     },
     {
-      image: sudem1,
+      image: sudem,
       name: "Divya Kapoor",
       title: "Security Analyst",
       socialmedia: {
@@ -119,113 +127,96 @@ const team = {
   ],
   2024: [
     {
-      image: sudem2,
-      name: "Jivan Narzary",
-      title: "Web Developer",
+      image: nabadeep,
+      name: "Nabadeep Kr. Das",
+      title: "Chief Convenor",
       socialmedia: {
-        instagram: "https://www.instagram.com/jivan",
-        twitter: "https://twitter.com/jivan",
-        linkedin: "https://linkedin.com/in/jivan",
-        github: "https://github.com/jivan",
+        instagram: "https://www.instagram.com/nabadeep___d/",
+        twitter: "https://x.com/NabadeepDas069",
+        linkedin: "https://www.linkedin.com/in/nabadeep-kr-das/",
+        github: "https://github.com/NABADEEP069",
       },
     },
     {
-      image: sudem1,
+      image: mohd,
+      name: "Mohd Zaid",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/zaida43630",
+        github: "https://github.com/zaida43630",
+      },
+    },
+    {
+      image: mayuri,
+      name: "Mayuri Bayan",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin:
+          "https://www.linkedin.com/in/mayuri-bayan-534a52291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "https://github.com/Mayuri424",
+      },
+    },
+    {
+      image: dibyajyoti,
+      name: "Dibyajyoti Ray Choudhury ",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin:
+          "https://www.linkedin.com/in/dibyajyoti-roychoudhury-6b4a92284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "https://github.com/Dibya2005",
+      },
+    },
+    {
+      image: sudem,
       name: "Sudem Narzary",
-      title: "Web Developer",
+      title: "Coordinator",
       socialmedia: {
-        instagram: "https://www.instagram.com/sudem",
-        twitter: "https://twitter.com/sudem",
-        linkedin: "https://linkedin.com/in/sudem",
-        github: "https://github.com/sudem",
+        instagram: "#",
+        twitter: "https://x.com/Sudemna16435567",
+        linkedin:
+          "https://www.linkedin.com/in/sudem-narzary-aa4975267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "https://github.com/ssudem",
       },
     },
     {
-      image: sudem3,
-      name: "Riya Sen",
-      title: "AI Engineer",
+      image: jivan,
+      name: "H Jivan Singha ",
+      title: "Coordinator",
       socialmedia: {
-        instagram: "https://www.instagram.com/riya",
-        twitter: "https://twitter.com/riya",
-        linkedin: "https://linkedin.com/in/riya",
-        github: "https://github.com/riya",
+        instagram: "#",
+        twitter: "#",
+        linkedin:
+          "https://www.linkedin.com/in/h-jivan-singha-940383350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "https://github.com/hjivansss",
       },
     },
     {
-      image: sudem2,
-      name: "Amit Kumar",
-      title: "Backend Developer",
+      image: parinita,
+      name: "Parinita Ray ",
+      title: "Coordinator",
       socialmedia: {
-        instagram: "https://www.instagram.com/amit",
-        twitter: "https://twitter.com/amit",
-        linkedin: "https://linkedin.com/in/amit",
-        github: "https://github.com/amit",
+        instagram: "https://www.instagram.com/parinittaaa",
+        twitter: "#",
+        linkedin:
+          "https://www.linkedin.com/in/parinita-ray-5ba9b3340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "https://github.com/ParinitaRay",
       },
     },
     {
-      image: sudem1,
-      name: "Neha Gupta",
-      title: "Frontend Developer",
+      image: samujjal,
+      name: "Samujjal Dutta",
+      title: "Coordinator",
       socialmedia: {
-        instagram: "https://www.instagram.com/neha",
-        twitter: "https://twitter.com/neha",
-        linkedin: "https://linkedin.com/in/neha",
-        github: "https://github.com/neha",
-      },
-    },
-    {
-      image: sudem3,
-      name: "Rahul Mehta",
-      title: "DevOps Engineer",
-      socialmedia: {
-        instagram: "https://www.instagram.com/rahul",
-        twitter: "https://twitter.com/rahul",
-        linkedin: "https://linkedin.com/in/rahul",
-        github: "https://github.com/rahul",
-      },
-    },
-    {
-      image: sudem2,
-      name: "Simran Kaur",
-      title: "UI/UX Designer",
-      socialmedia: {
-        instagram: "https://www.instagram.com/simran",
-        twitter: "https://twitter.com/simran",
-        linkedin: "https://linkedin.com/in/simran",
-        github: "https://github.com/simran",
-      },
-    },
-    {
-      image: sudem1,
-      name: "Vivek Sharma",
-      title: "Full Stack Developer",
-      socialmedia: {
-        instagram: "https://www.instagram.com/vivek",
-        twitter: "https://twitter.com/vivek",
-        linkedin: "https://linkedin.com/in/vivek",
-        github: "https://github.com/vivek",
-      },
-    },
-    {
-      image: sudem3,
-      name: "Pooja Rani",
-      title: "Cloud Engineer",
-      socialmedia: {
-        instagram: "https://www.instagram.com/pooja",
-        twitter: "https://twitter.com/pooja",
-        linkedin: "https://linkedin.com/in/pooja",
-        github: "https://github.com/pooja",
-      },
-    },
-    {
-      image: sudem2,
-      name: "Manish Tiwari",
-      title: "Security Analyst",
-      socialmedia: {
-        instagram: "https://www.instagram.com/manish",
-        twitter: "https://twitter.com/manish",
-        linkedin: "https://linkedin.com/in/manish",
-        github: "https://github.com/manish",
+        instagram: "https://www.instagram.com/samujjal.19/",
+        twitter: "#",
+        linkedin: "http://www.linkedin.com/in/samujjal-dutta-677b342b0",
+        github: "https://github.com/SamujjalDutta",
       },
     },
   ],

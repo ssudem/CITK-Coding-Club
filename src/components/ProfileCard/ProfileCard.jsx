@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProfileCard.css";
-import sudem from "../../assets/PeopleImg/sudem.jpeg"; // Replace with the actual image path
 
 import {
   FaTwitter,

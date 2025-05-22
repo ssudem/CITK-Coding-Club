@@ -11,13 +11,12 @@ import "./teamslider.css";
 // import required modules
 import { Navigation, Pagination } from "swiper/modules";
 import ProfileCard from "../ProfileCard/ProfileCard.jsx";
-import sudem from "../../assets/PeopleImg/sudem.jpeg";
 
 import { useNavigate } from "react-router-dom";
 import team from "../Team/teamdata.jsx";
 
 function TeamSlider() {
-  const year = "2023";
+  const year = "2024";
   const navigate = useNavigate();
   function handleClick() {
     navigate("/team");
