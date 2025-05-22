@@ -4,7 +4,7 @@ a {
 }
 
 .profile-card {
-  width: min(20rem, 75vw);
+  width: min(19rem, 75vw);
   height: min(23rem, 85vw);
 
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);

@@ -131,10 +131,11 @@ const team = {
       name: "Nabadeep Kr. Das",
       title: "Chief Convenor",
       socialmedia: {
-        instagram: "https://www.instagram.com/nabadeep___d/",
+        instagram: "#",
         twitter: "https://x.com/NabadeepDas069",
         linkedin: "https://www.linkedin.com/in/nabadeep-kr-das/",
         github: "https://github.com/NABADEEP069",
+        gmail: "nabadeepdas069@gmail.com",
       },
     },
     {
@@ -146,6 +147,7 @@ const team = {
         twitter: "#",
         linkedin: "https://www.linkedin.com/in/zaida43630",
         github: "https://github.com/zaida43630",
+        gmail: "u22cse3127@cit.ac.in",
       },
     },
     {
@@ -158,6 +160,7 @@ const team = {
         linkedin:
           "https://www.linkedin.com/in/mayuri-bayan-534a52291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "https://github.com/Mayuri424",
+        gmail: "u23cse1042@cit.ac.in",
       },
     },
     {
@@ -170,6 +173,7 @@ const team = {
         linkedin:
           "https://www.linkedin.com/in/dibyajyoti-roychoudhury-6b4a92284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "https://github.com/Dibya2005",
+        gmail: "dibyaroy0120@gmail.com",
       },
     },
     {
@@ -182,6 +186,7 @@ const team = {
         linkedin:
           "https://www.linkedin.com/in/sudem-narzary-aa4975267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "https://github.com/ssudem",
+        gmail: "sudemnarzary0983@gmail.com",
       },
     },
     {
@@ -194,6 +199,7 @@ const team = {
         linkedin:
           "https://www.linkedin.com/in/h-jivan-singha-940383350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "https://github.com/hjivansss",
+        gmail: "hjivansingha123@gmail.com",
       },
     },
     {
@@ -206,6 +212,7 @@ const team = {
         linkedin:
           "https://www.linkedin.com/in/parinita-ray-5ba9b3340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "https://github.com/ParinitaRay",
+        gmail: "u23cse1063@cit.ac.in",
       },
     },
     {
@@ -217,6 +224,7 @@ const team = {
         twitter: "#",
         linkedin: "http://www.linkedin.com/in/samujjal-dutta-677b342b0",
         github: "https://github.com/SamujjalDutta",
+        gmail: "rizamu94@gmail.com",
       },
     },
   ],
