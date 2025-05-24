@@ -36,6 +36,7 @@ const Footer = () => (
             <a
               href="https://www.instagram.com/codingclubcitk?igsh=bXcxaW5qMzJkNGNw"
               className="social-link"
+              target="_blank"
             >
               <FaInstagram className="icon instagram" />
               Instagram

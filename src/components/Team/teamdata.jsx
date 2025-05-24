@@ -1,127 +1,279 @@
-// image link -> "src/assets/PeopleImg/YourImageName.png"
+// image link -> "src/assets/PeopleImg/Y2024/Yyear/YourImageName.png"
+/*
+ person object ->
+      {
+      image: imagevarable,
+      name: "your name",
+      title: "your title",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin: "#",
+        github: "#",
+        gmail:""
+        gmail: "#",
+      },
+*/
 // 2024 :-
-import sudem from "../../assets/PeopleImg/sudem.webp";
-import dibyajyoti from "../../assets/PeopleImg/Dibyajyoti.webp";
-import jivan from "../../assets/PeopleImg/H_Jivan_Singha.webp";
-import mayuri from "../../assets/PeopleImg/MAYURI_BAYAN.webp";
-import mohd from "../../assets/PeopleImg/MOHD_ZAID.webp";
-import nabadeep from "../../assets/PeopleImg/nabadeep_das.webp";
-import parinita from "../../assets/PeopleImg/PARINITA_RAY.webp";
-import samujjal from "../../assets/PeopleImg/SAMUJJAL_DUTTA.jpeg";
+import sudem from "../../assets/PeopleImg/Y2024/sudem.webp";
+import dibyajyoti from "../../assets/PeopleImg/Y2024/Dibyajyoti.webp";
+import jivan from "../../assets/PeopleImg/Y2024/H_Jivan_Singha.webp";
+import mayuri from "../../assets/PeopleImg/Y2024/MAYURI_BAYAN.jpg";
+import mohd from "../../assets/PeopleImg/Y2024/MOHD_ZAID.webp";
+import nabadeep from "../../assets/PeopleImg/Y2024/nabadeep_das.jpg";
+import parinita from "../../assets/PeopleImg/Y2024/PARINITA_RAY.webp";
+import samujjal from "../../assets/PeopleImg/Y2024/SAMUJJAL_DUTTA.jpeg";
+import deepjyoti from "../../assets/PeopleImg/Y2024/DEEPJYOTI_DUTTA.jpg";
+import rohit from "../../assets/PeopleImg/Y2024/Rohit_Gupta.jpg";
+import tushar from "../../assets/PeopleImg/Y2024/tushar.jpeg";
 
-//2025:-
-import sudem1 from "../../assets/PeopleImg/sudem1.jpeg";
-import sudem2 from "../../assets/PeopleImg/sudem2.jpeg";
+//2023:-
+import amitava from "../../assets/PeopleImg/Y2022/amitava.jpg";
+import pranav from "../../assets/PeopleImg/Y2022/pranav.jpg";
+import pankaj from "../../assets/PeopleImg/Y2022/pankaj.jpg";
+import theo from "../../assets/PeopleImg/Y2022/theo.jpg";
+import dildar from "../../assets/PeopleImg/Y2022/dildar.jpeg";
+import mayank from "../../assets/PeopleImg/Y2022/mayank.jpeg";
+import kalpo from "../../assets/PeopleImg/Y2022/kalpo.jpg";
+import sandhya from "../../assets/PeopleImg/Y2022/sandhya.jpeg";
+import gwmshar from "../../assets/PeopleImg/Y2022/gwmshar.jpg";
+import krishna from "../../assets/PeopleImg/Y2022/krishna.jpeg";
+import kriti from "../../assets/PeopleImg/Y2022/kriti.jpeg";
+import deep from "../../assets/PeopleImg/Y2022/deep.jpeg";
+import subhash from "../../assets/PeopleImg/Y2022/subhash.jpeg";
+import dhrub from "../../assets/PeopleImg/Y2022/dhrub.jpeg";
+import pallab from "../../assets/PeopleImg/Y2022/pallab.jpeg";
+import mrinmoy from "../../assets/PeopleImg/Y2022/mrinmoy.png";
 const team = {
-  2023: [
+  2022: [
     {
-      image: sudem,
-      name: "Rohit Sharma",
-      title: "Frontend Developer",
+      image: amitava,
+      name: "Dr. Amitava Nag",
+      title: "Faculty Mentor",
       socialmedia: {
-        instagram: "https://www.instagram.com/rohit",
-        twitter: "https://twitter.com/rohit",
-        linkedin: "https://linkedin.com/in/rohit",
-        github: "https://github.com/rohit",
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/dr-amitava-nag-863b1962",
+        github: "#",
+        gmail: "amitava.nag@cit.ac.in",
       },
     },
     {
-      image: sudem2,
-      name: "Priya Singh",
-      title: "Backend Developer",
+      image: pranav,
+      name: "Dr. Pranav Kumar Singh",
+      title: "Faculty Mentor",
       socialmedia: {
-        instagram: "https://www.instagram.com/priya",
-        twitter: "https://twitter.com/priya",
-        linkedin: "https://linkedin.com/in/priya",
-        github: "https://github.com/priya",
+        instagram: "#",
+        twitter: "#",
+        linkedin:
+          "https://www.linkedin.com/in/pranav-singh-phd-smieee-6916348b",
+        github: "#",
+        gmail: "p.singh@cit.ac.in",
       },
     },
     {
-      image: sudem2,
-      name: "Aman Verma",
-      title: "UI/UX Designer",
+      image: pankaj,
+      name: "Dr. Pankaj Pratap Singh",
+      title: "Faculty Mentor",
       socialmedia: {
-        instagram: "https://www.instagram.com/aman",
-        twitter: "https://twitter.com/aman",
-        linkedin: "https://linkedin.com/in/aman",
-        github: "https://github.com/aman",
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/pankaj-pratap-singh-b8035620",
+        github: "#",
+
+        gmail: "pankajp.singh@cit.ac.in",
       },
     },
     {
-      image: sudem,
-      name: "Sneha Patel",
-      title: "Full Stack Developer",
+      image: theo,
+      name: "Theophilas Chapar",
+      title: "Chief Convenor",
       socialmedia: {
-        instagram: "https://www.instagram.com/sneha",
-        twitter: "https://twitter.com/sneha",
-        linkedin: "https://linkedin.com/in/sneha",
-        github: "https://github.com/sneha",
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/theophilas-chapar/",
+        github: "#",
+        gmail: "u21cse1006@cit.ac.in",
       },
     },
     {
-      image: sudem2,
-      name: "Vikas Kumar",
-      title: "DevOps Engineer",
+      image: dildar,
+      name: "Md Dildar Mandal",
+      title: "Convenor",
       socialmedia: {
-        instagram: "https://www.instagram.com/vikas",
-        twitter: "https://twitter.com/vikas",
-        linkedin: "https://linkedin.com/in/vikas",
-        github: "https://github.com/vikas",
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/md-dildar-mandal-837048199/",
+        github: "#",
+        gmail: "u21cse1043@cit.ac.in",
       },
     },
     {
-      image: sudem2,
-      name: "Anjali Mehra",
-      title: "Project Manager",
+      image: mayank,
+      name: "Mayank Katyayan",
+      title: "Convenor",
       socialmedia: {
-        instagram: "https://www.instagram.com/anjali",
-        twitter: "https://twitter.com/anjali",
-        linkedin: "https://linkedin.com/in/anjali",
-        github: "https://github.com/anjali",
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/mayank-katyayan-b8a67220b",
+        github: "#",
+        gmail: "mayank.katyayan123@gmail.com",
       },
     },
     {
-      image: sudem,
-      name: "Karan Joshi",
-      title: "Mobile Developer",
+      image: kalpo,
+      name: "Kalpojyoti Koch",
+      title: "Convenor",
       socialmedia: {
-        instagram: "https://www.instagram.com/karan",
-        twitter: "https://twitter.com/karan",
-        linkedin: "https://linkedin.com/in/karan",
-        github: "https://github.com/karan",
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/kalpo07",
+        github: "#",
+        gmail: "kalpokoch@gmail.com",
       },
     },
     {
-      image: sudem2,
-      name: "Meera Das",
-      title: "QA Engineer",
+      image: sandhya,
+      name: "Sandhya Kumari",
+      title: "Coordinator",
       socialmedia: {
-        instagram: "https://www.instagram.com/meera",
-        twitter: "https://twitter.com/meera",
-        linkedin: "https://linkedin.com/in/meera",
-        github: "https://github.com/meera",
+        instagram: "#",
+        twitter: "#",
+        linkedin: "http://www.linkedin.com/in/sandhya-kumari-83987522b",
+        github: "#",
+        gmail: "bsandhyak123@gmail.com",
       },
     },
     {
-      image: sudem2,
-      name: "Arjun Singh",
-      title: "Cloud Architect",
+      image: gwmshar,
+      name: "Gwmshar Brahma",
+      title: "Coordinator",
       socialmedia: {
-        instagram: "https://www.instagram.com/arjun",
-        twitter: "https://twitter.com/arjun",
-        linkedin: "https://linkedin.com/in/arjun",
-        github: "https://github.com/arjun",
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/gwmshar-brahma-649518221",
+        github: "#",
+        gmail: "gwmsharbrahma500@gmail.com",
       },
     },
     {
-      image: sudem,
-      name: "Divya Kapoor",
-      title: "Security Analyst",
+      image: krishna,
+      name: "Krishna Sharma",
+      title: "Coordinator",
       socialmedia: {
-        instagram: "https://www.instagram.com/divya",
-        twitter: "https://twitter.com/divya",
-        linkedin: "https://linkedin.com/in/divya",
-        github: "https://github.com/divya",
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/krishna-sharma-a502aa234",
+        github: "#",
+        gmail: "u21cse1057@cit.ac.in",
+      },
+    },
+    {
+      image: kriti,
+      name: "Kriti Kumari",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/kriti-kumari-7bb055217",
+        github: "#",
+        gmail: "kritikumari152@gmail.com",
+      },
+    },
+    {
+      image: deep,
+      name: "Deep Das",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin: "http://www.linkedin.com/in/",
+        github: "#",
+        gmail: "u21cse1023@cit.ac.in",
+      },
+    },
+    {
+      image: subhash,
+      name: "Subhash Wary",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/subhash-wary/",
+        github: "#",
+        gmail: "subhashwary@gmail.com",
+      },
+    },
+    {
+      image: dhrub,
+      name: "Dhrub Basumatary",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/dhrub-kr-basumatary-286004292",
+        github: "#",
+        gmail: "dhrubkr04@gmail.com",
+      },
+    },
+    {
+      image: pallab,
+      name: "Pallab Basumatary",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/pallob-basumatary-aa3744251",
+        github: "#",
+        gmail: "pallobbasumatary@gmail.com",
+      },
+    },
+    {
+      image: mohd,
+      name: "Mohd Zaid",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/zaida43630",
+        github: "https://github.com/zaida43630",
+        gmail: "u22cse3127@cit.ac.in",
+      },
+    },
+    {
+      image: nabadeep,
+      name: "Nabadeep Kr. Das",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "https://x.com/NabadeepDas069",
+        linkedin: "https://www.linkedin.com/in/nabadeep-kr-das/",
+        github: "https://github.com/NABADEEP069",
+        gmail: "nabadeepdas069@gmail.com",
+      },
+    },
+    {
+      image: tushar,
+      name: "Tushar Saha",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/tushar-saha-539a56273",
+        github: "#",
+        gmail: "sahatushar242002@gmail.com",
+      },
+    },
+    {
+      image: mrinmoy,
+      name: "Mrinmoy Kalita",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/",
+        github: "#",
+        gmail: "xyz@gmail.com",
       },
     },
   ],
@@ -136,6 +288,18 @@ const team = {
         linkedin: "https://www.linkedin.com/in/nabadeep-kr-das/",
         github: "https://github.com/NABADEEP069",
         gmail: "nabadeepdas069@gmail.com",
+      },
+    },
+    {
+      image: tushar,
+      name: "Tushar Saha",
+      title: "Convenor",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/tushar-saha-539a56273",
+        github: "#",
+        gmail: "sahatushar242002@gmail.com",
       },
     },
     {
@@ -182,7 +346,7 @@ const team = {
       title: "Coordinator",
       socialmedia: {
         instagram: "#",
-        twitter: "https://x.com/Sudemna16435567",
+        twitter: "#",
         linkedin:
           "https://www.linkedin.com/in/sudem-narzary-aa4975267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "https://github.com/ssudem",
@@ -225,6 +389,32 @@ const team = {
         linkedin: "http://www.linkedin.com/in/samujjal-dutta-677b342b0",
         github: "https://github.com/SamujjalDutta",
         gmail: "rizamu94@gmail.com",
+      },
+    },
+    {
+      image: rohit,
+      name: "Rohit Gupta ",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "#",
+        twitter: "#",
+        linkedin:
+          "https://www.linkedin.com/in/rohit-gupta-57a94b272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "https://github.com/ROHITGUPTA069",
+        gmail: "rohitgptatwork@gmail.com",
+      },
+    },
+    {
+      image: deepjyoti,
+      name: "Deepjyoti Dutta",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "https://www.instagram.com/deep_j_d",
+        twitter: "#",
+        linkedin:
+          "https://www.linkedin.com/in/deepjyoti-dutta-23ab9a26a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "https://github.com/DeepJDUTTA",
+        gmail: "deepjd62@gmail.com",
       },
     },
   ],
