@@ -28,7 +28,7 @@ function AboutUs(props) {
           ) : null}
         </div>
         <div className="about-img">
-          <img src={aboutImg} alt="About Us" loading="lazy" />
+          <img src={aboutImg} alt="About Us" />
         </div>
       </div>
     </section>
