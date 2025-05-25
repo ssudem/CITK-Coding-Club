@@ -7,7 +7,7 @@
 :root {
   --bgcolor1: rgba(0, 68, 255, 0.384);
   --bgcolor2: none;
-  --bgcolor3: #a1c4fd;
+  --bgcolor3: rgba(160, 197, 255, 0.95);
 }
 
 /* logo :- */
@@ -96,12 +96,15 @@ nav > ul {
   padding: 0.5rem 1.2rem;
 }
 
-button {
-  cursor: pointer;
-}
-
 .hem-menu {
   display: none;
+}
+
+.hem-menu > button {
+  -webkit-tap-highlight-color: transparent; /* Removes grey tap highlight on iOS/Android */
+  outline: none; /* Removes blue outline on tap */
+  background: none; /* Ensures no background flash */
+  box-shadow: none;
 }
 
 .active-link {
@@ -142,15 +145,18 @@ button {
   }
 
   .mobile-nav {
+    /* background-color: red; */
     background-color: var(--bgcolor3);
     width: 15rem;
     height: 20rem;
     position: fixed;
     top: 4rem;
     right: 0;
-
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: 3px solid blue;
+    border-top: none;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px -10px;
   }
   .mobile-nav > ul {
     height: 100%;
