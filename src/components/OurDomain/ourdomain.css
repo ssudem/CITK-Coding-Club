@@ -46,6 +46,10 @@
   height: 9rem;
   object-fit: contain;
   display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 /* ...existing code... */
 

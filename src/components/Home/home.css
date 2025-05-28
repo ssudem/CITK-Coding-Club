@@ -58,7 +58,7 @@
 }
 
 .HomeImg {
-  width: min(88vw, 500px);
+  width: min(40vw, 400px);
 }
 
 /* Responsive styles for mobile */
@@ -79,7 +79,7 @@
     text-align: start;
     line-height: 1.5rem;
   }
-  /* .HomeImg {
-    width: 300px;
-  } */
+  .HomeImg {
+    width: 260px;
+  }
 }

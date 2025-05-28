@@ -49,6 +49,9 @@ a {
   border: 3px solid #3f3fff;
   outline: 3px solid gold;
   object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .name {

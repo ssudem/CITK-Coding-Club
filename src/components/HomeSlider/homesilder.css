@@ -1,9 +1,9 @@
-.swiper {
+.cube-img-container > .swiper {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide {
+.cube-img-container > .swiper > .swiper-wrapper > .swiper-slide {
   background: #fff;
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.mySwiper {
+.cube-img-container > .mySwiper {
   width: 100%;
   height: 100%;
 }
@@ -50,7 +50,8 @@
 @media screen and (max-width: 768px) {
   .cube-img-container,
   .image-div,
-  .swiper-slide {
+  .cube-img-container > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide {
     border-radius: 1rem;
+    background-color: #e9e9fd;
   }
 }

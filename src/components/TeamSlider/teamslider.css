@@ -54,13 +54,13 @@
   }
 }
 
-.mySwiper {
+.home-team-container > .mySwiper {
   cursor: pointer;
   position: relative;
   padding: 3rem 3rem;
 }
 
-.swiper-slide {
+.home-team-container > .swiper > .swiper-wrapper > .swiper-slide {
   width: var(--slideWidth);
   display: flex;
   justify-content: center;
@@ -132,7 +132,7 @@
     border-radius: 0.8rem;
     font-size: 0.8rem;
   }
-  .mySwiper {
+  .home-team-container >.mySwiper {
     padding: 2rem 3rem;
     cursor: default !important;
     -webkit-tap-highlight-color: transparent; /* Removes tap highlight on iOS/Android */
