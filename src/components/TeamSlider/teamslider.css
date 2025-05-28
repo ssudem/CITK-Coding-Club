@@ -7,6 +7,12 @@
 }
 
 .home-team-section {
+  background: rgba(255, 255, 255, 1);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1),
+    rgba(214, 216, 255, 0.36)
+  );
   width: 100%;
 }
 

@@ -5,9 +5,9 @@
 }
 
 :root {
-  --bgcolor1: rgba(0, 68, 255, 0.384);
+  --bgcolor1: rgba(214, 216, 255, 1);
   --bgcolor2: none;
-  --bgcolor3: rgba(160, 197, 255, 0.95);
+  --bgcolor3: rgba(215, 216, 255, 1);
 }
 
 /* logo :- */
@@ -58,14 +58,12 @@ header {
   width: 100%;
 
   /* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
-  background-color: transparent;
+  background-color: var(--bgcolor1);
   box-shadow: none;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 header.scrolled {
-  background-color: var(--bgcolor1);
-  backdrop-filter: blur(50px);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
@@ -146,13 +144,13 @@ nav > ul {
 
   .mobile-nav {
     /* background-color: red; */
-    background-color: var(--bgcolor3);
+    background-color: var(--bgcolor1);
     width: 15rem;
     height: 20rem;
     position: fixed;
     top: 4rem;
     right: 0;
-    border: 3px solid blue;
+    border: 1.5px solid blue;
     border-top: none;
     border-right: none;
     border-bottom-left-radius: 10px;

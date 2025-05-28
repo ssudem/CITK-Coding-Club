@@ -1,6 +1,8 @@
 import HomeImg from "../../assets/HomeImg.webp";
 import "./home.css"; // Import the CSS file for styling
 
+import HomeSlider from "../HomeSlider/HomeSlider.jsx";
+
 import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
 
 function Home() {
@@ -26,7 +28,8 @@ function Home() {
           <button onClick={handleClick}>View Events &#8594;</button>
         </div>
         <div className="HomeImg">
-          <img src={HomeImg} alt="Home"  />
+          {/* <img src={HomeImg} alt="Home" /> */}
+          <HomeSlider />
         </div>
       </div>
     </section>

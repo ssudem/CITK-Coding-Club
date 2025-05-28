@@ -1,0 +1,56 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  /* overflow: hidden; */ /* Uncomment if you want to clip children */
+}
+
+.cube-img-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+
+.image-div {
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(104, 121, 189, 0.35) 0px 5px 15px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.image-div > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.cube-img-container .mySwiper .swiper-pagination-bullet-active {
+  background: #5d00ffdb; /* Your custom active color */
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .cube-img-container,
+  .image-div,
+  .swiper-slide {
+    border-radius: 1rem;
+  }
+}
