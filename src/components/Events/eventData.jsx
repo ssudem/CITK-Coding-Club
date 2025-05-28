@@ -1,3 +1,25 @@
+// image link -> "../../assets/EventImg/EventImage.webp"
+/*
+  Event object ->
+    {
+      registeration: true,
+      registerationLink: "https://www.google.com",
+      Eventimage: EventImage_variable,
+      Eventdate: "8th April 2025",
+      medium: "Google meet",
+      time: "7:00pm - 8:00 pm",
+      title: "write Title",  
+    },
+    {
+      registeration: false,
+      Eventimage: EventImage_variable,
+      Eventdate: "8th April 2025",
+      medium: "Google meet",
+      time: "7:00pm - 8:00 pm",
+      title: "write Title",  
+    },  
+*/
+// Recent Events :-
 import E1image from "../../assets/EventImg/E1.webp";
 import E2image from "../../assets/EventImg/E2.webp";
 import E3image from "../../assets/EventImg/E3.webp";

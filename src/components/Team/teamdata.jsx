@@ -1,8 +1,8 @@
-// image link -> "src/assets/PeopleImg/Y2024/Yyear/YourImageName.png"
+// image link -> ""../../assets/PeopleImg/Y2024/YourImage.webp""
 /*
  person object ->
       {
-      image: imagevarable,
+      image: image_variable,
       name: "your name",
       title: "your title",
       socialmedia: {
@@ -27,7 +27,7 @@ import deepjyoti from "../../assets/PeopleImg/Y2024/DEEPJYOTI_DUTTA.jpg";
 import rohit from "../../assets/PeopleImg/Y2024/Rohit_Gupta.jpg";
 import tushar from "../../assets/PeopleImg/Y2024/tushar.jpeg";
 
-//2023:-
+//2022:-
 import amitava from "../../assets/PeopleImg/Y2022/amitava.jpg";
 import pranav from "../../assets/PeopleImg/Y2022/pranav.jpg";
 import pankaj from "../../assets/PeopleImg/Y2022/pankaj.jpg";
