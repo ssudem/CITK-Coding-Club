@@ -18,12 +18,11 @@ function Home() {
           <h1>Welcome to CITK Coding Club</h1>
           <p>
             Coding Club is one of the most active and prominent technical clubs
-            at the Central Institute of Technology Kokrajhar. Functioning under
-            the Institute Technical Council, our mission is to foster a thriving
-            coding culture within the campus. We aim to provide students with
-            the resources, mentorship, and collaborative environment needed to
-            enhance their coding skills and become part of a broader developer
-            community.
+            at the Central Institute of Technology Kokrajhar. Our mission is to
+            foster a thriving coding culture within the campus. We aim to
+            provide students with the resources, mentorship, and collaborative
+            environment needed to enhance their coding skills and become part of
+            a broader developer community.
           </p>
           <button onClick={handleClick}>View Events &#8594;</button>
         </div>

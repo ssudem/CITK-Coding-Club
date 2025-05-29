@@ -13,22 +13,23 @@ function AboutUs(props) {
         <div className="about">
           <h1>About Us</h1>
           <p>
-            Everyone should learn programming because it teaches you how to
-            think. As the Coding Club of a technical institution, we host coding
-            events, workshops, contests, and mentorship sessions. We believe
-            coding, like poetry, should be short and concise. Our mission is to
-            foster a strong coding culture and provide a collaborative space for
-            learning. Recent initiatives include specialized groups in
-            competitive programming, development, and machine learning, as well
-            as a mentorship program for freshers. We aim to carry this momentum
-            forward.
+            Programming teaches valuable problem-solving skills, making it a
+            skill everyone should learn. As the Coding Club of a technical
+            institution, we organize coding events, workshops, contests, and
+            mentorship sessions to build a vibrant coding community. We believe
+            code, like poetry, should be elegant and concise. Our mission is to
+            nurture a strong coding culture and create a collaborative
+            environment for learning and growth. Recent initiatives include
+            dedicated groups for competitive programming, development, and
+            machine learning, along with a mentorship program to support
+            newcomers. We’re committed to carrying this momentum forward.
           </p>
           {props.isTeam ? (
             <button onClick={handleClick}>View Team &#8594;</button>
           ) : null}
         </div>
         <div className="about-img">
-          <img src={aboutImg} alt="About Us" />
+          <img src={aboutImg} alt="About Us" loading="lazy" />
         </div>
       </div>
     </section>

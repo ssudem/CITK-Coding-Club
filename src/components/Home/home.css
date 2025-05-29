@@ -21,7 +21,7 @@
 }
 
 .welcome {
-  max-width: 28rem;
+  max-width: 32rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -32,12 +32,15 @@
   font-weight: 900;
   color: #1a237e;
   margin-bottom: 0.5rem;
+  text-align: start;
+  word-spacing: 6px;
 }
 
 .welcome p {
   font-size: 1.2rem;
   color: #333;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .welcome > button {
@@ -58,7 +61,7 @@
 }
 
 .HomeImg {
-  width: min(40vw, 400px);
+  width: min(30vw, 370px);
 }
 
 /* Responsive styles for mobile */
@@ -66,6 +69,7 @@
   .home-container {
     flex-direction: column-reverse;
     gap: 2rem;
+    padding: 2rem 2rem;
   }
   .welcome > h1 {
     align-self: center;
@@ -76,7 +80,6 @@
   }
   .welcome > p {
     font-size: 1.1rem;
-    text-align: start;
     line-height: 1.5rem;
   }
   .HomeImg {

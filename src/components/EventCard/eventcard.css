@@ -1,7 +1,8 @@
 .event-card {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 0%);
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   overflow: hidden;
   max-width: min(19rem, 75vw);
   width: 100%;
@@ -10,7 +11,8 @@
 
 .event-card:hover {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
 }
 
 .event-image-container {
@@ -26,6 +28,12 @@
   height: 100%;
   object-fit: cover;
   display: block;
+
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.event-card:hover .event-image {
+  transform: scale(1.08);
 }
 
 .event-date {
@@ -70,10 +78,9 @@
   cursor: pointer;
   transition: 0.3s;
   &:hover {
-    background-color: #333;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #003cff;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
 }
 

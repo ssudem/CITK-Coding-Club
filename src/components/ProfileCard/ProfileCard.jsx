@@ -15,7 +15,7 @@ const ProfileCard = ({ image, name, title, socialmedia }) => {
     <div className="card-container">
       <div className="profile-card">
         <div className="avatar-wrapper">
-          <img src={image} alt="Image" className="avatar" />
+          <img src={image} alt="Image" loading="lazy" className="avatar" />
         </div>
         <h2 className="name">{name}</h2>
         <p className="title">{title}</p>

@@ -14,7 +14,7 @@
         gmail: "#",
       },
 */
-// 2024 :-
+//2024 :-
 import sudem from "../../assets/PeopleImg/Y2024/sudem.webp";
 import dibyajyoti from "../../assets/PeopleImg/Y2024/Dibyajyoti.webp";
 import jivan from "../../assets/PeopleImg/Y2024/H_Jivan_Singha.webp";

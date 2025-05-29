@@ -18,10 +18,9 @@
 .ourdomain > p {
   max-width: 90rem;
   margin: auto;
-  font-size: min(1.2rem, 5vw);
-  /* font-weight: 1000; */
+  font-size: min(1.2rem, 4.5vw);
   text-align: center;
-
+  font-style: italic;
   padding: 1rem 2rem; /* top right bottom left */
 }
 
@@ -94,12 +93,21 @@
   }
 }
 
+.scroller[data-animated="false"] .scroller__inner {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
   .ourdomain {
     padding: 1rem 0;
   }
   .ourdomain > p {
     line-height: 1.5rem;
+  }
+  .scroller {
+    padding: 0 3rem;
   }
   .scroller__inner > img {
     height: 6rem;
@@ -108,6 +116,14 @@
     gap: 0.5rem;
   }
   .scroller[data-speed="slow"] {
-    --_animation-duration: 60s;
+    --_animation-duration: 30s;
+  }
+  .scroller[data-direction="left"] {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .scroller[data-direction="right"] {
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
   }
 }

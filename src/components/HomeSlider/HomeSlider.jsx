@@ -14,9 +14,9 @@ export default function HomeSlider() {
   const isMobile = window.innerWidth <= 768;
   const cubeEffectProps = {
     shadow: true,
-    slideShadows: true,
+    slideShadows: isMobile ? false : true,
     shadowOffset: isMobile ? 10 : 20,
-    shadowScale: isMobile ? 0.8 : 0.97,
+    shadowScale: isMobile ? 0.8 : 0.98,
   };
 
   return (

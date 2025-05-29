@@ -1,22 +1,15 @@
 import "./eventCard.css";
-// import ImageEvent from "../../assets/EventImg/E1.jpeg"; // Make sure this path is correct
-
-// const event = {
-//   registeration: true,
-//   registerationLink: "https://www.google.com",
-//   Eventimage: ImageEvent,
-//   Eventdate: "8th April 2025",
-//   medium: "Google meet",
-//   time: "7:00pm - 8:00 pm",
-//   title:
-//     "Debug Dialouges with Ahmed Abid | An interactive session where we bring insiring minds from the tech world to your screen!",
-// };
 
 const EventCard = (event) => {
   return (
     <div className="event-card">
       <div className="event-image-container">
-        <img src={event.Eventimage} alt="Event" className="event-image" />
+        <img
+          src={event.Eventimage}
+          alt="Event"
+          loading="lazy"
+          className="event-image"
+        />
         <div className="event-date">{event.Eventdate}</div>
       </div>
       <div className="event-content">
@@ -27,14 +20,17 @@ const EventCard = (event) => {
         <h3 className="event-title">{event.title}</h3>
 
         {event.registeration ? (
-          <button className="event-button-register">
-            <a href={event.registerationLink} target="_blank">
-              Register here
-            </a>
-          </button>
+          <a
+            className="event-button-register"
+            href={event.registerationLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Register here
+          </a>
         ) : (
-          <button className="event-button-registerclosed">
-            Resgistration Closed
+          <button className="event-button-registerclosed" disabled>
+            Registration Closed
           </button>
         )}
       </div>

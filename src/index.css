@@ -25,3 +25,8 @@ button {
   box-sizing: border-box;
   cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
