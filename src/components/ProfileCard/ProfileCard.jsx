@@ -20,7 +20,7 @@ const ProfileCard = ({ image, name, title, socialmedia }) => {
         <h2 className="name">{name}</h2>
         <p className="title">{title}</p>
         <div className="social-icons">
-          {socialmedia.twitter !== "#" ? (
+          {socialmedia.twitter && socialmedia.twitter !== "#" ? (
             <a href={socialmedia.twitter} target="_blank">
               <FaTwitter />
             </a>
