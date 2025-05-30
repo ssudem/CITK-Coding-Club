@@ -8,7 +8,7 @@
       Eventdate: "8th April 2025",
       medium: "Google meet",
       time: "7:00pm - 8:00 pm",
-      title: "write Title",  
+      title: "write Title 15-20 words",  
     },
     {
       registeration: false,
@@ -16,7 +16,7 @@
       Eventdate: "8th April 2025",
       medium: "Google meet",
       time: "7:00pm - 8:00 pm",
-      title: "write Title",  
+      title: "write Title 15-20 words",  
     },  
 */
 // Recent Events :-

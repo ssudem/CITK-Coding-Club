@@ -1,6 +1,9 @@
 import React from "react";
 import "./ProfileCard.css";
 
+import Image from "../Image/Image.jsx";
+import personPlaceHolder from "../../assets/PlaceHolder/person-placeholder.avif";
+
 import {
   FaTwitter,
   FaInstagram,
@@ -15,7 +18,14 @@ const ProfileCard = ({ image, name, title, socialmedia }) => {
     <div className="card-container">
       <div className="profile-card">
         <div className="avatar-wrapper">
-          <img src={image} alt="Image" loading="lazy" className="avatar" />
+          {/* <img src={image} alt="Image" loading="lazy" className="avatar" /> */}
+          <Image
+            className="avatar"
+            src={image}
+            placeholder={personPlaceHolder}
+            alt="Image"
+            lazy={true}
+          />
         </div>
         <h2 className="name">{name}</h2>
         <p className="title">{title}</p>

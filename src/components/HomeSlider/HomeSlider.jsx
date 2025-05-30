@@ -6,6 +6,8 @@ import "swiper/css/pagination";
 import "./homesilder.css";
 import { EffectCube, Pagination, Autoplay } from "swiper/modules";
 import homeImages from "./HomeImgData.jsx";
+import Image from "../Image/Image.jsx";
+import placeholder from "../../assets/PlaceHolder/img-placeholder.avif";
 
 export default function HomeSlider() {
   const [reverse, setReverse] = useState(false);
@@ -55,7 +57,13 @@ export default function HomeSlider() {
         {homeImages.map((imgSrc, idx) => (
           <SwiperSlide key={idx}>
             <div className="image-div">
-              <img src={imgSrc} alt={`slide-${idx}`} />
+              {/* <img src={imgSrc} alt={`slide-${idx}`} /> */}
+              <Image
+                src={imgSrc}
+                placeholder={placeholder}
+                alt={`slide-${idx}`}
+                lazy={true}
+              />
             </div>
           </SwiperSlide>
         ))}

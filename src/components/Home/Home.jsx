@@ -1,4 +1,3 @@
-import HomeImg from "../../assets/HomeImg.webp";
 import "./home.css"; // Import the CSS file for styling
 
 import HomeSlider from "../HomeSlider/HomeSlider.jsx";

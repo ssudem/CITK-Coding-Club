@@ -1,6 +1,9 @@
 import aboutImg from "../../assets/AboutImg.webp";
 import "./aboutus.css";
-import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
+import { useNavigate } from "react-router-dom";
+
+import Image from "../Image/Image.jsx";
+import placeholder from "../../assets/PlaceHolder/img-placeholder.avif";
 
 function AboutUs(props) {
   const navigate = useNavigate();
@@ -29,7 +32,13 @@ function AboutUs(props) {
           ) : null}
         </div>
         <div className="about-img">
-          <img src={aboutImg} alt="About Us" loading="lazy" />
+          {/* <img src={aboutImg} alt="About Us" loading="lazy" /> */}
+          <Image
+            src={aboutImg}
+            placeholder={placeholder}
+            alt="About Us"
+            lazy={true}
+          />
         </div>
       </div>
     </section>

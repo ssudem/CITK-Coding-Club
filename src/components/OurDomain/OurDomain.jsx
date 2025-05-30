@@ -1,6 +1,8 @@
 import "./ourdomain.css";
 import languageImages from "./Imgdata.jsx";
-import { useEffect } from "react";
+
+import Image from "../Image/Image.jsx";
+import codePlaceHolder from "../../assets/PlaceHolder/code-placeholder.webp";
 
 const OurDomain = () => {
   // const prefersReducedMotion = window.matchMedia(
@@ -47,11 +49,12 @@ const OurDomain = () => {
           >
             <div className="scroller__inner">
               {firstHalf.map((imgSrc, idx) => (
-                <img
+                <Image
+                  key={`firstHalf-${idx}`}
                   src={imgSrc}
+                  placeholder={codePlaceHolder}
                   alt={`language-top-${idx}`}
-                  key={idx}
-                  loading="lazy"
+                  lazy={true}
                 />
               ))}
             </div>
@@ -64,11 +67,12 @@ const OurDomain = () => {
           >
             <div className="scroller__inner">
               {secondHalf.map((imgSrc, idx) => (
-                <img
+                <Image
+                  key={`secondHalf-${idx}`}
                   src={imgSrc}
-                  alt={`language-bottom-${idx}`}
-                  key={idx}
-                  loading="lazy"
+                  placeholder={codePlaceHolder}
+                  alt={`language-top-${idx}`}
+                  lazy={true}
                 />
               ))}
             </div>
@@ -83,11 +87,12 @@ const OurDomain = () => {
         >
           <div className="scroller__inner">
             {imagesToShow.map((imgSrc, idx) => (
-              <img
+              <Image
+                key={`image-${idx}`}
                 src={imgSrc}
-                alt={`language-${idx}`}
-                key={idx}
-                loading="lazy"
+                placeholder={codePlaceHolder}
+                alt={`language-top-${idx}`}
+                lazy={true}
               />
             ))}
           </div>

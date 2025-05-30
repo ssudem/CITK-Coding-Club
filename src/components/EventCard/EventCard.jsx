@@ -1,14 +1,18 @@
 import "./eventCard.css";
 
+import Image from "../Image/Image.jsx";
+import EventPlaceHolder from "../../assets/PlaceHolder/event-placeholder.avif";
+
 const EventCard = (event) => {
   return (
     <div className="event-card">
       <div className="event-image-container">
-        <img
-          src={event.Eventimage}
-          alt="Event"
-          loading="lazy"
+        <Image
           className="event-image"
+          src={event.Eventimage}
+          placeholder={EventPlaceHolder}
+          alt="Event"
+          lazy={true}
         />
         <div className="event-date">{event.Eventdate}</div>
       </div>
