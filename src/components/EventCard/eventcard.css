@@ -46,6 +46,7 @@
 }
 
 .event-content {
+  min-height: 14rem;
   padding: 1rem;
 }
 
@@ -75,6 +76,7 @@
   font-size: 0.9rem;
   cursor: pointer;
   transition: 0.3s;
+  margin-bottom: 1rem;
   &:hover {
     background-color: #003cff;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,

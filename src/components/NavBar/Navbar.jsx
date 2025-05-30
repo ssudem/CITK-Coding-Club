@@ -7,10 +7,8 @@ import { NavLink, useLocation } from "react-router-dom";
 import citklogo from "../../assets/citklogo.png"; // adjust the path as needed
 import CClogo from "../../assets/CClogo.png"; // adjust the path as needed
 
-// Then use:
-{
-  /* <img src={citklogo} height="120px" alt="logo" /> */
-}
+import Image from "../Image/Image.jsx";
+import placeholder from "../../assets/PlaceHolder/img-placeholder.avif";
 
 function Navbar() {
   const menuRef = useRef();
@@ -58,9 +56,19 @@ function Navbar() {
       <div className="container">
         <div className="content">
           <div className="logo">
-            <img src={CClogo} alt="CC" />
+            <Image
+              src={CClogo}
+              placeholder={placeholder}
+              alt={`CC`}
+              lazy={true}
+            />
             <span>X</span>
-            <img src={citklogo} alt="CITK" />
+            <Image
+              src={citklogo}
+              placeholder={placeholder}
+              alt={`CITK`}
+              lazy={true}
+            />
           </div>
           <nav
             ref={menuRef}
