@@ -8,6 +8,11 @@ import team from "./teamdata.jsx"; // Import the team data
 function Team() {
   const [year, setYear] = useState("2024");
 
+  const options = Object.keys(team).map((key) => ({
+    value: key,
+    label: key,
+  }));
+
   return (
     <section className="team-section">
       <div className="container team-section-inner">
@@ -22,11 +27,12 @@ function Team() {
           <span> Year : </span>
           <Select
             className="dropdown"
-            options={[
-              { value: "2022", label: "2022" },
-              { value: "2024", label: "2024" },
-              // { value: "2025", label: "2025" },
-            ]}
+            // options={[
+            //   { value: "2022", label: "2022" },
+            //   { value: "2024", label: "2024" },
+            //   { value: "2025", label: "2025" },
+            // ]}
+            options={options}
             values={[{ value: year, label: year }]}
             placeholder={year}
             searchable={false}

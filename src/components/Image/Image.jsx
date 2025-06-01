@@ -6,6 +6,7 @@ const Image = ({
   alt = "",
   style = {},
   lazy = true,
+  blur = 8,
   ...rest
 }) => {
   const imgRef = useRef(null);
@@ -27,7 +28,7 @@ const Image = ({
 
   const lazyStyle = lazy
     ? {
-        filter: loaded ? "none" : "blur(10px)",
+        filter: loaded ? "none" : `blur(${blur}px)`,
         transition: "filter 0.3s ease",
       }
     : {};

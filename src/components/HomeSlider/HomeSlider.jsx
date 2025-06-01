@@ -15,8 +15,8 @@ export default function HomeSlider() {
 
   const isMobile = window.innerWidth <= 768;
   const cubeEffectProps = {
-    shadow: true,
-    slideShadows: isMobile ? false : true,
+    shadow: false,
+    slideShadows: false,
     shadowOffset: isMobile ? 10 : 20,
     shadowScale: isMobile ? 0.8 : 0.98,
   };
@@ -63,6 +63,7 @@ export default function HomeSlider() {
                 placeholder={placeholder}
                 alt={`slide-${idx}`}
                 lazy={true}
+                blur={2}
               />
             </div>
           </SwiperSlide>

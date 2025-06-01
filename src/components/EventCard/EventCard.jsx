@@ -1,7 +1,7 @@
 import "./eventCard.css";
 
 import Image from "../Image/Image.jsx";
-import EventPlaceHolder from "../../assets/PlaceHolder/event-placeholder.avif";
+import EventPlaceHolder from "../../assets/PlaceHolder/img-placeholder.avif";
 
 const EventCard = (event) => {
   return (

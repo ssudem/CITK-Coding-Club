@@ -1,14 +1,25 @@
 import "./home.css"; // Import the CSS file for styling
-
 import HomeSlider from "../HomeSlider/HomeSlider.jsx";
-
 import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
+import { useState, useEffect } from "react";
+import HomePlaceHolder from "../../assets/HomeImg/V6.avif";
 
 function Home() {
   const navigate = useNavigate();
+  const [isSliderLoaded, setIsSliderLoaded] = useState(false); // State to track slider loading
+
   function handleClick() {
-    navigate("/events"); // Navigate to the "/about" route
+    navigate("/events"); // Navigate to the "/events" route
   }
+
+  useEffect(() => {
+    // Simulate slider loading (replace with actual logic if needed)
+    const timer = setTimeout(() => {
+      setIsSliderLoaded(true); // Set slider as loaded after a delay
+    }, 200); // Adjust delay as needed
+
+    return () => clearTimeout(timer); // Cleanup timer
+  }, []);
 
   return (
     <section className="home-section">
@@ -26,11 +37,15 @@ function Home() {
           <button onClick={handleClick}>View Events &#8594;</button>
         </div>
         <div className="HomeImg">
-          {/* <img src={HomeImg} alt="Home" /> */}
-          <HomeSlider />
+          {isSliderLoaded ? (
+            <HomeSlider />
+          ) : (
+            <img src={HomePlaceHolder} alt="Loading..." />
+          )}
         </div>
       </div>
     </section>
   );
 }
+
 export default Home;
