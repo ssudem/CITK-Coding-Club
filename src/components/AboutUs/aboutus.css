@@ -85,4 +85,13 @@
   .about-img {
     max-width: max(300px, 60vw);
   }
+  .about > button {
+    padding: 0.5rem 1rem;
+    width: 9rem;
+    background-color: rgba(89, 0, 255, 1);
+    color: white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(89, 0, 255, 0.6);
+  }
 }

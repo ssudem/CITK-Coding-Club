@@ -32,7 +32,6 @@ function AboutUs(props) {
           ) : null}
         </div>
         <div className="about-img">
-          {/* <img src={aboutImg} alt="About Us" loading="lazy" /> */}
           <Image
             src={aboutImg}
             placeholder={placeholder}

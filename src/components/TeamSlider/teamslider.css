@@ -32,7 +32,7 @@
 }
 .member-heading > h1 {
   max-width: 60%;
-  font-size: min(2rem, 7vw);
+  font-size: min(2rem, 7.5vw);
   font-weight: 600;
 }
 .member-heading > button {
@@ -131,7 +131,9 @@
   .member-heading > button {
     padding: 0.5rem 1rem;
     border-radius: 0.8rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    background-color: rgb(93, 0, 255);
+    color: white;
   }
   .home-team-container > .mySwiper {
     padding: 2rem 3rem;
