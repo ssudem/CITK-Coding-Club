@@ -9,9 +9,9 @@ import Home from "./components/Home/Home.jsx";
 import AboutUs from "./components/AboutUs/AboutUs.jsx";
 import Events from "./components/Events/Events.jsx";
 import Team from "./components/Team/Team.jsx";
-import OurDomain from "./components/OurDomain/OurDomain.jsx";
 import TeamSlider from "./components/TeamSlider/TeamSlider.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import OurDomain from "./components/DomainScroller/Domain.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();

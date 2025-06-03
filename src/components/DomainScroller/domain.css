@@ -1,0 +1,91 @@
+.ourdomain {
+  background: rgba(255, 255, 255, 1);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1),
+    rgba(214, 216, 255, 0.36)
+  );
+  width: 100%;
+  padding: 2rem 0;
+}
+.ourdomain > h1 {
+  font-size: min(3rem, 10vw);
+  font-weight: 1000;
+}
+
+.ourdomain > p {
+  max-width: 90rem;
+  margin: auto;
+  font-size: min(1.2rem, 4.5vw);
+  text-align: center;
+  font-style: italic;
+  padding: 1rem 2rem; 
+}
+
+.domain-container {
+  max-width: 90rem;
+  margin: auto;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.52) 0%,
+    rgba(231, 230, 255, 1) 50%,
+    rgba(255, 255, 255, 0.46) 100%
+  );
+}
+
+.scroller {
+  display: flex;
+
+  overflow: hidden; /* ensure overflow is hidden */
+  pointer-events: none;
+  padding: 2rem 3rem;
+
+  -webkit-mask: linear-gradient(
+    s 90deg,
+    transparent,
+    white 10%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 10%, white 80%, transparent);
+}
+
+.scroller-inner {
+  display: flex;
+  flex-shrink: 0;
+  height: 100%;
+  gap: 1rem;
+}
+
+.scroller-inner > img {
+  height: 10rem;
+  object-fit: cover; /* preserve aspect if needed */
+}
+
+@media screen and (max-width: 768px) {
+  .ourdomain {
+    padding: 1rem 0;
+  }
+  .ourdomain > p {
+    line-height: 1.5rem;
+  }
+  .scroller-inner > img {
+    height: 6rem;
+  }
+  .scroller-inner {
+    gap: 0.5rem;
+  }
+
+  .scroller {
+    padding: 0;
+  }
+  .scroller:first-child {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .scroller:last-child {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}

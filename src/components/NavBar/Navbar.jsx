@@ -61,6 +61,7 @@ function Navbar() {
               placeholder={placeholder}
               alt={`CC`}
               lazy={true}
+              blur={2}
             />
             <span>X</span>
             <Image
@@ -68,6 +69,7 @@ function Navbar() {
               placeholder={placeholder}
               alt={`CITK`}
               lazy={true}
+              blur={2}
             />
           </div>
           <nav
