@@ -8,7 +8,7 @@ import placeholder from "../../assets/PlaceHolder/img-placeholder.avif";
 function AboutUs(props) {
   const navigate = useNavigate();
   function handleClick() {
-    navigate("/team"); // Navigate to the "/about" route
+    navigate("/team"); // Navigate to the "/team" route
   }
   return (
     <section className="about-section" id="about-section">
