@@ -19,7 +19,7 @@
   font-size: min(1.2rem, 4.5vw);
   text-align: center;
   font-style: italic;
-  padding: 1rem 2rem; 
+  padding: 1rem 2rem;
 }
 
 .domain-container {
@@ -32,14 +32,6 @@
     rgba(231, 230, 255, 1) 50%,
     rgba(255, 255, 255, 0.46) 100%
   );
-}
-
-.scroller {
-  display: flex;
-
-  overflow: hidden; /* ensure overflow is hidden */
-  pointer-events: none;
-  padding: 2rem 3rem;
 
   -webkit-mask: linear-gradient(
     s 90deg,
@@ -49,6 +41,14 @@
     transparent
   );
   mask: linear-gradient(90deg, transparent, white 10%, white 80%, transparent);
+}
+
+.scroller {
+  display: flex;
+
+  overflow: hidden; /* ensure overflow is hidden */
+  pointer-events: none;
+  padding: 2rem 3rem;
 }
 
 .scroller-inner {
