@@ -15,7 +15,7 @@ import {
 
 const ProfileCard = ({ image, name, title, socialmedia }) => {
   return (
-    <div className="card-container">
+    <div className="card-container" data-aos="zoom-in">
       <div className="profile-card">
         <div className="avatar-wrapper">
           {/* <img src={image} alt="Image" loading="lazy" className="avatar" /> */}

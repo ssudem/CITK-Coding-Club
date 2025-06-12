@@ -121,7 +121,25 @@ nav > ul {
     height: 3rem;
   }
   header {
+    position: sticky; /* Ensure it stays fixed at the top */
     height: 4rem;
+
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+
+  .mobile-nav {
+    background-color: var(--bgcolor1);
+    width: 15rem;
+    height: 20rem;
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    border: 1.5px solid blue;
+    border-top: none;
+    border-right: none;
+    border-bottom-left-radius: 10px;
   }
   .content {
     height: 4rem;
@@ -150,20 +168,6 @@ nav > ul {
 
   .desktop-nav {
     display: none;
-  }
-
-  .mobile-nav {
-    /* background-color: red; */
-    background-color: var(--bgcolor1);
-    width: 15rem;
-    height: 20rem;
-    position: fixed;
-    top: 4rem;
-    right: 0;
-    border: 1.5px solid blue;
-    border-top: none;
-    border-right: none;
-    border-bottom-left-radius: 10px;
   }
   .mobile-nav::before,
   .mobile-nav::after {

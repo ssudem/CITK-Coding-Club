@@ -19,14 +19,20 @@ const Domain = () => {
 
   return (
     <section className="ourdomain">
-      <h1 style={{ textAlign: "center" }}>OUR DOMAIN</h1>
-      <p>
+      <h1 data-aos="zoom-in-down" style={{ textAlign: "center" }}>
+        OUR DOMAIN
+      </h1>
+      <p data-aos="zoom-in-down">
         We cover most of the domain of programming like competitive programming,
         development related field, etc. We are making small teams on every
         domain so that we can grow in each and every domain.
       </p>
       {isMobile ? (
-        <div className="domain-container">
+        <div
+          className="domain-container"
+          data-aos="zoom-in-down"
+          data-aos-duration="500"
+        >
           <DomainScroller
             images={firstHalf}
             from="0"
@@ -41,7 +47,11 @@ const Domain = () => {
           />
         </div>
       ) : (
-        <div className="domain-container">
+        <div
+          className="domain-container"
+          data-aos="zoom-in-down"
+          data-aos-duration="800"
+        >
           <DomainScroller
             images={imagesToShow}
             from="0"

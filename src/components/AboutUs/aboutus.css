@@ -43,18 +43,14 @@
 .about > button {
   padding: 0.5rem 1rem;
   width: 9rem;
-  background-color: rgba(144, 0, 255, 0.065);
+  /* background-color: rgba(89, 0, 255, 1); */
+  color: white;
   border-radius: 0.4rem;
   cursor: pointer;
-  box-shadow: 0 0 4px rgba(89, 0, 255, 0.6);
-  transition: all 0.4s ease-in-out;
-  &:hover {
-    background-color: rgba(89, 0, 255, 1);
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-  }
+
+  background: linear-gradient(to right, #1a237e 0%, #802cff 50%, #1a237e 100%);
+  background-size: 300%;
+  animation: animate-gradient 7s linear infinite;
 }
 
 .about-img {

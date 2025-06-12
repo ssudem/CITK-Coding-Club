@@ -28,27 +28,32 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
 }
 .member-heading > h1 {
   max-width: 60%;
-  font-size: min(2rem, 7.5vw);
+  font-size: min(2.5rem, 7.5vw);
   font-weight: 600;
+
+  background: linear-gradient(to right, #1a237e 0%, #6600ff 50%, #1a237e 100%);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 7s linear infinite;
 }
 .member-heading > button {
   color: rgb(0, 0, 0);
   border: 1px solid black;
 
-  padding: 0.8rem 1.2rem;
+  padding: 0.7rem 1.2rem;
   border-radius: 0.8rem;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  background-color: #e2ebf0;
+  background-color: rgb(93, 0, 255);
+  color: white;
   &:hover {
-    background-color: rgb(93, 0, 255);
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(93, 0, 255, 0.902);
   }
 }
 

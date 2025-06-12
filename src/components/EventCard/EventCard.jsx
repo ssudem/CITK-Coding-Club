@@ -5,7 +5,7 @@ import EventPlaceHolder from "../../assets/PlaceHolder/img-placeholder.avif";
 
 const EventCard = (event) => {
   return (
-    <div className="event-card">
+    <div className="event-card" data-aos="zoom-in">
       <div className="event-image-container">
         <Image
           className="event-image"

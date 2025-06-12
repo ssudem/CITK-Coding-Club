@@ -4,6 +4,9 @@ import { useLocation } from "react-router-dom";
 import { BrowserRouter, RouterProvider } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Navbar from "./components/NavBar/Navbar.jsx";
 import Home from "./components/Home/Home.jsx";
 import AboutUs from "./components/AboutUs/AboutUs.jsx";
@@ -74,6 +77,15 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      AOS.init({
+        once: false, // Changed from true to false
+      });
+    }, 200);
+
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <>
       <RouterProvider router={router} />

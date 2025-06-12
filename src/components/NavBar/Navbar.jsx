@@ -16,6 +16,8 @@ function Navbar() {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
+  const isMobileWidth = window.innerWidth <= 600; // Adjust the width as needed
+
   const [isMobile, setIsMobile] = useState(false); // to toggle menu( mobile version)
   const [scrolled, setScrolled] = useState(false); // to change the header style on scroll
 
@@ -55,13 +57,17 @@ function Navbar() {
     >
       <div className="container">
         <div className="content">
-          <div className="logo">
+          <div
+            className="logo"
+            data-aos={!isMobileWidth ? "fade-down" : ""}
+            data-aos-duration="800"
+          >
             <Image
               src={CClogo}
               placeholder={placeholder}
               alt={`CC`}
               lazy={true}
-              blur={2}
+              blur={1}
             />
             <span>X</span>
             <Image
@@ -69,7 +75,7 @@ function Navbar() {
               placeholder={placeholder}
               alt={`CITK`}
               lazy={true}
-              blur={2}
+              blur={1}
             />
           </div>
           <nav
@@ -77,7 +83,11 @@ function Navbar() {
             className={isMobile ? "mobile-nav" : "desktop-nav"}
           >
             <ul className="nav-NavLinks">
-              <li onClick={() => setIsMobile(false)}>
+              <li
+                onClick={() => setIsMobile(false)}
+                data-aos="fade-down"
+                data-aos-duration="800"
+              >
                 <NavLink
                   to="/"
                   className={({ isActive }) => (isActive ? "active-link" : "")}
@@ -85,7 +95,11 @@ function Navbar() {
                   Home
                 </NavLink>
               </li>
-              <li onClick={() => setIsMobile(false)}>
+              <li
+                onClick={() => setIsMobile(false)}
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 <NavLink
                   to="/about"
                   className={({ isActive }) => (isActive ? "active-link" : "")}
@@ -93,7 +107,11 @@ function Navbar() {
                   About
                 </NavLink>
               </li>
-              <li onClick={() => setIsMobile(false)}>
+              <li
+                onClick={() => setIsMobile(false)}
+                data-aos="fade-down"
+                data-aos-duration="1200"
+              >
                 <NavLink
                   to="/team"
                   className={({ isActive }) => (isActive ? "active-link" : "")}
@@ -101,7 +119,11 @@ function Navbar() {
                   Team
                 </NavLink>
               </li>
-              <li onClick={() => setIsMobile(false)}>
+              <li
+                onClick={() => setIsMobile(false)}
+                data-aos="fade-down"
+                data-aos-duration="1400"
+              >
                 <NavLink
                   to="/events"
                   className={({ isActive }) => (isActive ? "active-link" : "")}
@@ -111,7 +133,11 @@ function Navbar() {
               </li>
             </ul>
           </nav>
-          <div className="hem-menu">
+          <div
+            className="hem-menu"
+            data-aos={!isMobileWidth ? "fade-down" : ""}
+            data-aos-duration="800"
+          >
             <button onClick={handleToggle}>
               {!isMobile ? <IoMenu /> : <RxCross1 />}
             </button>

@@ -65,13 +65,9 @@
   border-radius: 0.4rem;
   cursor: pointer;
 
-  transition: all 0.2s ease-in-out;
   background: linear-gradient(to right, #1a237e 0%, #802cff 50%, #1a237e 100%);
   background-size: 300%;
   animation: animate-gradient 7s linear infinite;
-  &:hover {
-    transform: scale(105%);
-  }
 }
 
 .HomeImg {

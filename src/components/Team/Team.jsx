@@ -16,15 +16,17 @@ function Team() {
   return (
     <section className="team-section">
       <div className="container team-section-inner">
-        <h1>OUR AMAZING TEAM</h1>
-        <p>
+        <h1 data-aos="zoom-in-down" data-aos-duration="500">
+          OUR AMAZING TEAM
+        </h1>
+        <p data-aos="zoom-out-down" data-aos-duration="800">
           We are a group of passionate individuals who are dedicated to
           collaborating and creating amazing things together. Our team is
           committed to continuous learning and growth, and we are always looking
           for new ways to improve our skills and knowledge.
         </p>
         <div className="dropdown-container">
-          <span> Year : </span>
+          <span data-aos="zoom-in"> Year : </span>
           <Select
             className="dropdown"
             // options={[

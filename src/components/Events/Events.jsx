@@ -9,15 +9,21 @@ function Events() {
   return (
     <section className="event-section">
       <div className="container event-section-inner">
-        <h1>EVENTS & WORKSHOPS</h1>
-        <p>
+        <h1 data-aos="zoom-out-down" data-aos-duration="500">
+          EVENTS & WORKSHOPS
+        </h1>
+        <p data-aos="zoom-in-down" data-aos-duration="800">
           Coding is all about practice and dedication towards learning new
           things. We organise various seminars, workshops, bootcamps, etc to
           help students to get more exposure into various domains of
           programming.
         </p>
 
-        <div className="toggle-wrapper">
+        <div
+          className="toggle-wrapper"
+          data-aos="zoom-in-right"
+          data-aos-duration="800"
+        >
           <button
             className={`toggle-button ${
               activeTab === "recent" ? "active" : ""

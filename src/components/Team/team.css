@@ -36,6 +36,7 @@
 .dropdown .react-dropdown-select-dropdown {
   /* position: fixed; */
   width: 6rem;
+  z-index: 1000 !important;
 }
 
 .react-dropdown-select {

@@ -8,8 +8,10 @@
 
   color: #1a237e;
   text-align: center;
-  font-size: min(3rem, 10vw);
+  font-size: min(3rem, 11.5vw);
   font-weight: 900;
+
+  word-spacing: 10px;
 }
 
 .event-section-inner > p {
@@ -59,7 +61,7 @@
 }
 
 .toggle-button.active {
-  background-color: #3b82f6;
+  background-color: rgba(93, 0, 255, 0.848);
   color: #fff;
 }
 
@@ -71,6 +73,10 @@
   .toggle-button {
     padding: 8px 16px;
     font-size: 0.9rem;
+  }
+  .event-section-inner > h1 {
+    word-spacing: 15px;
+    font-weight: 750;
   }
   .event-section-inner > p {
     text-align: justify;
