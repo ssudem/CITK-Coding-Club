@@ -9,6 +9,7 @@
   padding: 2rem 0;
 }
 .ourdomain > h1 {
+  color: #1a237e;
   font-size: min(3rem, 10vw);
   font-weight: 1000;
 }
@@ -52,6 +53,7 @@
 }
 
 .scroller-inner {
+  user-select: none;
   display: flex;
   flex-shrink: 0;
   height: 100%;

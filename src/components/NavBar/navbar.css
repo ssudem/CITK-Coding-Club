@@ -38,11 +38,12 @@ li {
   font-weight: 550;
   text-decoration: none;
   padding: 0.8rem 1.2rem;
-  border-radius: 0.8rem;
+  border-radius: 0.7rem;
   transition: all 0.3s ease-in-out;
   &:hover {
-    background-color: #6881ff;
-    color: #ffffff;
+    background-color: rgba(104, 129, 255, 0.256);
+    color: #5100ff;
+    outline: 0.5px solid #5100ff6b;
   }
 }
 
@@ -86,6 +87,7 @@ nav > ul {
   justify-content: flex-end;
   align-items: center;
   gap: 2rem;
+  user-select: none;
 }
 
 .nav-NavLinks > li > a {
@@ -104,9 +106,10 @@ nav > ul {
 }
 
 .active-link {
-  background-color: blue;
+  background-color: #5d00e8 !important;
   color: #ffffff !important;
-  /* text-decoration: underline; */
+  pointer-events: none;
+  user-select: none;
 }
 
 /* media query */
@@ -128,12 +131,21 @@ nav > ul {
     text-align: end;
   }
   .hem-menu > button {
+    height: 4rem;
     border: none;
     color: black;
     background-color: var(--bgcolor2);
-    font-size: 2.5rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
+    font-size: 3.2rem;
+  }
+  .hem-menu > button > svg {
+    padding-top: 0.2rem;
+  }
+
+  .nav-NavLinks > li > a {
+    background-color: rgba(104, 129, 255, 0.159);
+    color: #5100ff;
+    outline: 0.5px solid #5100ff6b;
+    transition: none;
   }
 
   .desktop-nav {
@@ -152,8 +164,33 @@ nav > ul {
     border-top: none;
     border-right: none;
     border-bottom-left-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px -10px;
   }
+  .mobile-nav::before,
+  .mobile-nav::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Wider left shadow */
+  .mobile-nav::before {
+    top: 0;
+    left: 0;
+    width: 20px; /* extend area for wider shadow */
+    height: 100%;
+    box-shadow: -15px 0 20px rgba(0, 0, 0, 0.2); /* wider + more blur */
+  }
+
+  /* Wider bottom shadow */
+  .mobile-nav::after {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px; /* extend area for wider shadow */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25); /* wider + more blur */
+  }
+
   .mobile-nav > ul {
     height: 100%;
     padding: 2rem 0;

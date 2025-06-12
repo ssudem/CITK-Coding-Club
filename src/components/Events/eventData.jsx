@@ -59,6 +59,15 @@ const event = {
     {
       registeration: false,
       Eventimage: E1image,
+      Eventdate: "5th May 2025",
+      medium: "Online",
+      time: "6:00pm - 7:30 pm",
+      title:
+        "Introduction to Blockchain Technology | Discover the basics of blockchain and its applications in the modern world.",
+    },
+    {
+      registeration: false,
+      Eventimage: E2image,
       Eventdate: "8th April 2025",
       medium: "Google meet",
       time: "7:00pm - 8:00 pm",
@@ -67,7 +76,7 @@ const event = {
     },
     {
       registeration: false,
-      Eventimage: E2image,
+      Eventimage: E3image,
       Eventdate: "12th March 2025",
       medium: "Auditorium",
       time: "5:00pm - 7:00 pm",

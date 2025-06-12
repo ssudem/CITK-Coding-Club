@@ -28,37 +28,49 @@
 }
 
 .welcome > h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  color: #1a237e;
-  margin-bottom: 0.5rem;
+  font-size: 4rem;
+  font-weight: 700;
   text-align: start;
-  word-spacing: 6px;
+
+  word-spacing: 10px;
+  line-height: 4rem;
+  letter-spacing: 3px;
+
+  font-family: "Alumni Sans SC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 80%;
+
+  background: linear-gradient(to right, #1a237e 0%, #6600ff 50%, #1a237e 100%);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 7s linear infinite;
 }
 
-.welcome p {
+.welcome > p {
   font-size: 1.2rem;
   color: #333;
   line-height: 1.6;
   text-align: justify;
+  width: min(100%, 50vw);
 }
 
 .welcome > button {
   padding: 0.5rem 1rem;
   width: 9rem;
-  background-color: rgba(144, 0, 255, 0.065);
+  /* background-color: rgba(89, 0, 255, 1); */
+  color: white;
   border-radius: 0.4rem;
   cursor: pointer;
-  box-shadow: 0 0 4px rgba(89, 0, 255, 0.6);
-  transition: all 0.4s ease-in-out;
-  &:hover {
-    /* animation: none; */
-    background-color: rgba(89, 0, 255, 1);
-    color: white;
 
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  transition: all 0.2s ease-in-out;
+  background: linear-gradient(to right, #1a237e 0%, #802cff 50%, #1a237e 100%);
+  background-size: 300%;
+  animation: animate-gradient 7s linear infinite;
+  &:hover {
+    transform: scale(105%);
   }
 }
 
@@ -83,15 +95,19 @@
     padding: 2rem 2rem;
   }
   .welcome > h1 {
+    letter-spacing: 1.5px;
+    line-height: 2.5rem;
     align-self: center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bolder;
-    max-width: 100%;
+    width: 100%;
   }
+
   .welcome > p {
     font-size: 1.1rem;
     line-height: 1.5rem;
+    width: 100%;
   }
   .HomeImg {
     width: max(270px, 60vw);

@@ -1,6 +1,6 @@
 import "./navbar.css";
-import { FaHamburger } from "react-icons/fa";
-import { ImCross } from "react-icons/im";
+import { IoMenu } from "react-icons/io5";
+import { RxCross1 } from "react-icons/rx";
 import { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -8,7 +8,7 @@ import citklogo from "../../assets/citklogo.png"; // adjust the path as needed
 import CClogo from "../../assets/CClogo.png"; // adjust the path as needed
 
 import Image from "../Image/Image.jsx";
-import placeholder from "../../assets/PlaceHolder/img-placeholder.avif";
+import placeholder from "../../assets/PlaceHolder/code-placeholder.webp";
 
 function Navbar() {
   const menuRef = useRef();
@@ -113,7 +113,7 @@ function Navbar() {
           </nav>
           <div className="hem-menu">
             <button onClick={handleToggle}>
-              {!isMobile ? <FaHamburger /> : <ImCross />}
+              {!isMobile ? <IoMenu /> : <RxCross1 />}
             </button>
           </div>
         </div>

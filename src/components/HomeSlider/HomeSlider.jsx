@@ -7,7 +7,7 @@ import "./homesilder.css";
 import { EffectCube, Pagination, Autoplay } from "swiper/modules";
 import homeImages from "./HomeImgData.jsx";
 import Image from "../Image/Image.jsx";
-import placeholder from "../../assets/PlaceHolder/img-placeholder.avif";
+import placeholder from "../../assets/PlaceHolder/code-placeholder.webp";
 
 export default function HomeSlider() {
   const [reverse, setReverse] = useState(false);
