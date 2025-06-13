@@ -85,4 +85,7 @@
   .team-section-inner > p {
     text-align: justify;
   }
+  .dropdown-container {
+    height: 4rem;
+  }
 }

@@ -22,30 +22,20 @@ function TeamSlider() {
     navigate("/team");
   }
 
-  const isMobile = window.innerWidth < 600; // Check if the screen width is less than 600px
   return (
     <section className="home-team-section">
       <div className="container home-team-container">
         <div className="member-heading">
-          {!isMobile ? (
-            <>
-              <h1 data-aos="zoom-in-right" data-aos-duration="800">
-                TEAM MEMBERS {year}
-              </h1>
-              <button
-                onClick={handleClick}
-                data-aos="zoom-in-left"
-                data-aos-duration="800"
-              >
-                View All
-              </button>
-            </>
-          ) : (
-            <>
-              <h1>TEAM MEMBERS {year}</h1>
-              <button onClick={handleClick}>View All</button>
-            </>
-          )}
+          <h1 data-aos="zoom-in-right" data-aos-duration="800">
+            TEAM MEMBERS {year}
+          </h1>
+          <button
+            onClick={handleClick}
+            data-aos="zoom-in-left"
+            data-aos-duration="800"
+          >
+            View All
+          </button>
         </div>
         <Swiper
           slidesPerView={"auto"}

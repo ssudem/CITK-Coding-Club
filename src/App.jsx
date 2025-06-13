@@ -1,7 +1,7 @@
 // import { useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { BrowserRouter, RouterProvider } from "react-router";
+import { RouterProvider } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
 
 import AOS from "aos";
@@ -25,14 +25,27 @@ function ScrollToTop() {
 
   return null;
 }
+function AOSsetup() {
+  const timeout = setTimeout(() => {
+    AOS.init({
+      once: false,
+      // Disable AOS on mobile device
+      // disable: function () {
+      //   return window.innerWidth < 600;
+      // },
+    });
+  }, 200);
+
+  return () => clearTimeout(timeout);
+}
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <>
-        <ScrollToTop />
         <Navbar />
+        <ScrollToTop />
         <Home />
         <OurDomain />
         <AboutUs isTeam={false} />
@@ -45,8 +58,8 @@ const router = createBrowserRouter([
     path: "/about",
     element: (
       <>
-        <ScrollToTop />
         <Navbar />
+        <ScrollToTop />
         <AboutUs isTeam={true} />
         <Footer />
       </>
@@ -56,8 +69,8 @@ const router = createBrowserRouter([
     path: "/events",
     element: (
       <>
-        <ScrollToTop />
         <Navbar />
+        <ScrollToTop />
         <Events />
         <Footer />
       </>
@@ -67,8 +80,8 @@ const router = createBrowserRouter([
     path: "/team",
     element: (
       <>
-        <ScrollToTop />
         <Navbar />
+        <ScrollToTop />
         <Team />
         <Footer />
       </>
@@ -78,13 +91,7 @@ const router = createBrowserRouter([
 
 function App() {
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      AOS.init({
-        once: false, // Changed from true to false
-      });
-    }, 200);
-
-    return () => clearTimeout(timeout);
+    AOSsetup();
   }, []);
   return (
     <>

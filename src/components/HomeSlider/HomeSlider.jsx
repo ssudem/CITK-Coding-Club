@@ -25,7 +25,7 @@ export default function HomeSlider() {
     <div
       className="cube-img-container"
       data-aos="fade-down"
-      data-aos-duration="1000"
+      data-aos-duration="800"
     >
       <Swiper
         effect={"cube"}
