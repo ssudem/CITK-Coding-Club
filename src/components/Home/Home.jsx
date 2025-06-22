@@ -1,14 +1,21 @@
-import "./home.css"; // Import the CSS file for styling
+import "./home.css";
 import HomeSlider from "../HomeSlider/HomeSlider.jsx";
-import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import HomePlaceHolder from "../../assets/HomeImg/V6.avif";
 
 function Home() {
   const navigate = useNavigate();
+  const [sliderLoaded, setSliderLoaded] = useState(false);
+
+  // Simulate HomeSlider loading (replace with actual event if available)
+  useEffect(() => {
+    const timer = setTimeout(() => setSliderLoaded(true), 900); // Adjust time as needed
+    return () => clearTimeout(timer);
+  }, []);
 
   function handleClick() {
-    navigate("/events"); // Navigate to the "/events" route
+    navigate("/events");
   }
 
   return (
@@ -18,7 +25,7 @@ function Home() {
           <h1 data-aos="zoom-in-down" data-aos-duration="600">
             Welcome to CITK Coding Club
           </h1>
-          <p data-aos="fade-down" data-aos-duration="800">
+          <p data-aos="fade-down" data-aos-duration="1000">
             Coding Club is one of the most active and prominent technical clubs
             at the Central Institute of Technology Kokrajhar. Our mission is to
             foster a thriving coding culture within the campus. We aim to
@@ -34,8 +41,12 @@ function Home() {
             View Events &#8594;
           </button>
         </div>
-        <div className="HomeImg">
-          <HomeSlider />
+        <div className="HomeImg" data-aos="fade-down" data-aos-duration="1000">
+          {!sliderLoaded ? (
+            <img src={HomePlaceHolder} alt="Loading..." />
+          ) : (
+            <HomeSlider />
+          )}
         </div>
       </div>
     </section>

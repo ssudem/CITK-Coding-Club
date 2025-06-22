@@ -22,11 +22,7 @@ export default function HomeSlider() {
   };
 
   return (
-    <div
-      className="cube-img-container"
-      data-aos="fade-down"
-      data-aos-duration="800"
-    >
+    <div className="cube-img-container">
       <Swiper
         effect={"cube"}
         grabCursor={true}
@@ -67,7 +63,7 @@ export default function HomeSlider() {
                 placeholder={placeholder}
                 alt={`slide-${idx}`}
                 lazy={true}
-                blur={2}
+                blur={0}
               />
             </div>
           </SwiperSlide>

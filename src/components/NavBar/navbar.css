@@ -28,10 +28,10 @@
   font-weight: 700;
 }
 /* ------ */
-
-li {
-  list-style: none;
+.nav-NavLinks > li {
+  height: 100%;
 }
+
 .nav-NavLinks > li > a {
   color: black;
   font-size: 1.2rem;
@@ -129,11 +129,19 @@ nav > ul {
     backface-visibility: hidden;
     transform: translateZ(0);
   }
+  .content {
+    height: 4rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
 
   .mobile-nav {
+    animation: slideInNav 0.7s cubic-bezier(0.05, 0.8, 0.1, 0.95);
     background-color: var(--bgcolor1);
-    width: 15rem;
-    height: 20rem;
+    width: max(50vw, 15rem);
+    height: 50vh;
     position: fixed;
     top: 4rem;
     right: 0;
@@ -142,8 +150,18 @@ nav > ul {
     border-right: none;
     border-bottom-left-radius: 10px;
   }
-  .content {
-    height: 4rem;
+
+  .nav-NavLinks > .Homelink > a {
+    animation: slideInNavLinksLeft 0.5s cubic-bezier(0, 0, 0, 0.98);
+  }
+  .nav-NavLinks > .aboutlink > a {
+    animation: slideInNavLinksRight 0.7s cubic-bezier(0, 0, 0, 0.98);
+  }
+  .nav-NavLinks > .teamlink > a {
+    animation: slideInNavLinksLeft 0.9s cubic-bezier(0, 0, 0, 0.98);
+  }
+  .nav-NavLinks > .eventslink > a {
+    animation: slideInNavLinksRight 1.1s cubic-bezier(0, 0, 0, 0.98);
   }
   .hem-menu {
     display: inline-block;
@@ -165,17 +183,16 @@ nav > ul {
     color: #5100ff;
     outline: 0.5px solid #5100ff6b;
     transition: none;
+    font-size: max(1.2rem, 3.5vw);
   }
 
-  .desktop-nav {
-    display: none;
-  }
   .mobile-nav::before,
   .mobile-nav::after {
     content: "";
     position: absolute;
     pointer-events: none;
     z-index: -1;
+    border-bottom-left-radius: 10px;
   }
 
   /* Wider left shadow */
@@ -198,11 +215,16 @@ nav > ul {
 
   .mobile-nav > ul {
     height: 100%;
-    padding: 2rem 0;
     display: flex;
     justify-content: center;
+    gap: 5vh;
     align-items: center;
     flex-direction: column;
+  }
+  .mobile-nav > ul > li {
+    width: 100%;
+    text-align: center;
+    display: contents;
   }
 
   header.active-nav {

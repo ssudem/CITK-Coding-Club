@@ -88,8 +88,12 @@ function Navbar() {
                 <li
                   key={index}
                   onClick={() => setIsMobile(false)}
-                  data-aos="fade-down"
-                  data-aos-duration={`${800 + index * 200}`}
+                  {...(!isMobileView
+                    ? {
+                        "data-aos": "fade-down",
+                        "data-aos-duration": `${800 + index * 200}`,
+                      }
+                    : { className: `${item === "" ? "Home" : item}link` })}
                 >
                   <NavLink
                     to={`/${item.toLowerCase()}`}
@@ -104,8 +108,12 @@ function Navbar() {
             </ul>
           </nav>
           <div className="hem-menu">
-            <button onClick={handleToggle}>
-              {!isMobile ? <IoMenu /> : <RxCross1 />}
+            <button>
+              {!isMobile ? (
+                <IoMenu onClick={handleToggle} />
+              ) : (
+                <RxCross1 onClick={handleToggle} />
+              )}
             </button>
           </div>
         </div>

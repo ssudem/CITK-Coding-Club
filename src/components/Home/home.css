@@ -79,8 +79,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 1.5rem;
-  box-shadow: 0 4px 24px rgba(64, 133, 253, 0.15);
-  filter: blur(2px);
+  box-shadow: 0 4px 24px rgba(90, 1, 245, 0.142);
 }
 
 /* Responsive styles for mobile */

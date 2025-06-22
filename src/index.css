@@ -26,12 +26,17 @@ button {
   cursor: pointer;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-section {
+section,
+footer {
   overflow-x: hidden;
 }
 
@@ -44,5 +49,37 @@ section {
   }
   100% {
     background-position: 0%;
+  }
+}
+
+@keyframes slideInNav {
+  from {
+    transform: translateY(-5%);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInNavLinksLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInNavLinksRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

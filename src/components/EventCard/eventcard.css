@@ -6,11 +6,12 @@
   overflow: hidden;
   max-width: min(19rem, 75vw);
   width: 100%;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .event-card:hover {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  transform: scale(1.02) !important;
 }
 
 .event-image-container {
@@ -78,7 +79,7 @@
   transition: 0.3s;
   margin-bottom: 1rem;
   &:hover {
-    background-color: #003cff;
+    background-color: #6600ff;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
       rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }

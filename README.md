@@ -1,12 +1,26 @@
-# React + Vite
+# Coding Club CITK Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="src/assets/CITKTabLogo.png" alt="Coding Club CITK Logo" width="180"/>
+</p>
 
-Currently, two official plugins are available:
+Welcome to the official website of the Coding Club at Central Institute of Technology Kokrajhar (CITK)!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 **Live Website:** [https://coding-club-citk.netlify.app/](https://coding-club-citk.netlify.app/)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This website serves as the digital hub for the Coding Club, providing information about our mission, upcoming and past events, team members, and ways to connect with us.
+
+## Features
+
+- **Home:** Introduction to the club and its vision.
+- **Events:** Details of upcoming and past coding events, workshops, and bootcamps.
+- **About Us:** Information about the club, its initiatives, and team.
+- **Contact & Socials:** Email, address, and social media links.
+
+## Tech Stack
+
+- **Frontend:** ReactJS
+- **Styling:** CSS
+- **Build Tool:** Parcel

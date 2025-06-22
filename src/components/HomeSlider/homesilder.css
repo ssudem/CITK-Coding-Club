@@ -3,6 +3,7 @@
   height: 100%;
 }
 
+
 .cube-img-container > .swiper > .swiper-wrapper > .swiper-slide {
   /* background-color: #e9e9fd; */
   background-color: transparent;
@@ -25,10 +26,6 @@
 .image-div {
   width: 100%;
   height: 100%;
-  /* box-shadow: rgba(104, 121, 189, 0.35) 0px 5px 15px; */
-  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; */
   box-shadow: 0 4px 24px rgba(90, 1, 245, 0.142);
   border-radius: 1.5rem;
 }

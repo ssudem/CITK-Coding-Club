@@ -2,19 +2,31 @@ import "./domain.css";
 import DomainScroller from "./DomainScroller.jsx";
 import languageImages from "./Imgdata.jsx";
 
+// Fisher-Yates shuffle
+function shuffleArray(array) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 const Domain = () => {
   const isMobile = window.innerWidth <= 768;
 
+  // Shuffle the images once per render
+  const shuffledImages = shuffleArray(languageImages);
+
   let firstHalf, secondHalf, imagesToShow;
   if (isMobile) {
-    // Split images into two halves if mobilr verson
-    const half = Math.ceil(languageImages.length / 2);
-    firstHalf = languageImages.slice(0, Math.ceil(half));
-    secondHalf = languageImages.slice(half);
+    const half = Math.ceil(shuffledImages.length / 2);
+    firstHalf = shuffledImages.slice(0, Math.ceil(half));
+    secondHalf = shuffledImages.slice(half);
     firstHalf = [...firstHalf, ...firstHalf];
     secondHalf = [...secondHalf, ...secondHalf];
   } else {
-    imagesToShow = languageImages;
+    imagesToShow = shuffledImages;
   }
 
   return (

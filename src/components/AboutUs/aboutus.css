@@ -63,6 +63,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 1.5rem;
+  aspect-ratio: 1 / 1;
   box-shadow: 0 4px 24px rgba(64, 133, 253, 0.15);
 }
 

@@ -1,12 +1,15 @@
-import aboutImg from "../../assets/AboutImg.webp";
+
 import "./aboutus.css";
 import { useNavigate } from "react-router-dom";
 
 import Image from "../Image/Image.jsx";
 import placeholder from "../../assets/PlaceHolder/img-placeholder.avif";
 
+import AboutImages from "./AboutImgData.jsx";
+
 function AboutUs(props) {
   const isMobileView = window.innerWidth <= 768; // Check if the view is mobile
+  const aboutImg = AboutImages[Math.floor(Math.random() * AboutImages.length)];
   const navigate = useNavigate();
   function handleClick() {
     navigate("/team"); // Navigate to the "/team" route
