@@ -63,23 +63,13 @@ footer {
   }
 }
 
-@keyframes slideInNavLinksLeft {
+@keyframes slideInNavLinksTop {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateY(-50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes slideInNavLinksRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }

@@ -28,11 +28,7 @@ function ScrollToTop() {
 function AOSsetup() {
   const timeout = setTimeout(() => {
     AOS.init({
-      once: false,
-      // Disable AOS on mobile device
-      // disable: function () {
-      //   return window.innerWidth < 600;
-      // },
+      once: true,
     });
   }, 200);
 
