@@ -4,8 +4,13 @@ import Image from "../Image/Image.jsx";
 import EventPlaceHolder from "../../assets/PlaceHolder/img-placeholder.avif";
 
 const EventCard = (event) => {
+  const isMobileView = window.innerWidth <= 768; // Check if the view is mobile
   return (
-    <div className="event-card" data-aos="zoom-in">
+    <div
+      className="event-card"
+      data-aos={isMobileView ? "fade-in" : "zoom-in-up"}
+      data-aos-duration={isMobileView ? "800" : "500"}
+    >
       <div className="event-image-container">
         <Image
           className="event-image"
@@ -21,17 +26,19 @@ const EventCard = (event) => {
           <span>📍 {event.medium}</span>
           <span>⏰ {event.time}</span>
         </div>
-        <h3 className="event-title">{event.title}</h3>
+
+        <p className="event-title">{event.title}</p>
 
         {event.registeration ? (
-          <a
-            className="event-button-register"
-            href={event.registerationLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Register here
-          </a>
+          <button className="event-button-register">
+            <a
+              href={event.registerationLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register here
+            </a>
+          </button>
         ) : (
           <button className="event-button-registerclosed" disabled>
             Registration Closed

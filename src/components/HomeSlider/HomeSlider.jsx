@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cube";
@@ -20,6 +20,15 @@ export default function HomeSlider() {
     shadowOffset: isMobile ? 10 : 20,
     shadowScale: isMobile ? 0.8 : 0.98,
   };
+
+  const shuffledImages = useMemo(() => {
+    const arr = [...homeImages];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }, []);
 
   return (
     <div className="cube-img-container">
@@ -54,10 +63,9 @@ export default function HomeSlider() {
           }
         }}
       >
-        {homeImages.map((imgSrc, idx) => (
-          <SwiperSlide key={idx}>
+        {shuffledImages.map((imgSrc, idx) => (
+          <SwiperSlide>
             <div className="image-div">
-              {/* <img src={imgSrc} alt={`slide-${idx}`} /> */}
               <Image
                 src={imgSrc}
                 placeholder={placeholder}

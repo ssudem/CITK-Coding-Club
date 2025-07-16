@@ -23,12 +23,24 @@
 import E1image from "../../assets/EventImg/E1.webp";
 import E2image from "../../assets/EventImg/E2.webp";
 import E3image from "../../assets/EventImg/E3.webp";
+import E4image from "../../assets/EventImg/E4.avif";
 
 const event = {
   recent: [
     {
       registeration: true,
-      registerationLink: "https://www.google.com",
+      registerationLink:
+        "https://docs.google.com/forms/d/e/1FAIpQLSeCeAzi_wN8gMCQCszpqb5aElRVG8sT1RXD1EIeDtrlBpc9LQ/viewform", // (link not explicitly given)
+      Eventimage: E4image,
+      Eventdate: "18 July 2025", // (year not in image)
+      medium: "Google meet",
+      time: "7:30 pm", // (end time unspecified)
+      title:
+        "Debug Dialogues with Nipnil Raj Deka | An interactive session with tech experts from industry & academia!",
+    },
+    {
+      registeration: false,
+      // registerationLink: "https://www.google.com",
       Eventimage: E3image,
       Eventdate: "8th April 2025",
       medium: "Google meet",

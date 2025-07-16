@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import EventCard from "../EventCard/EventCard.jsx";
 import "./events.css";
 import event from "./eventData.jsx";
@@ -18,7 +18,6 @@ function Events() {
           help students to get more exposure into various domains of
           programming.
         </p>
-
         <div
           className="toggle-wrapper"
           data-aos="zoom-in-right"
@@ -39,10 +38,9 @@ function Events() {
             Past Events
           </button>
         </div>
-
         <div className="event-container">
           {event[activeTab].map((ev, idx) => (
-            <EventCard key={idx} {...ev} />
+            <EventCard key={activeTab + "-" + idx} {...ev} />
           ))}
         </div>
       </div>

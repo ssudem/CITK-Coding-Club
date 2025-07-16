@@ -1,22 +1,19 @@
 import "./domain.css";
 import DomainScroller from "./DomainScroller.jsx";
 import languageImages from "./Imgdata.jsx";
+import { useMemo } from "react";
 
-// Fisher-Yates shuffle
-function shuffleArray(array) {
-  const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
-const Domain = () => {
+function Domain() {
   const isMobile = window.innerWidth <= 768;
 
-  // Shuffle the images once per render
-  const shuffledImages = shuffleArray(languageImages);
+  const shuffledImages = useMemo(() => {
+    const arr = [...languageImages];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }, []);
 
   let firstHalf, secondHalf, imagesToShow;
   if (isMobile) {
@@ -74,6 +71,6 @@ const Domain = () => {
       )}
     </section>
   );
-};
+}
 
 export default Domain;

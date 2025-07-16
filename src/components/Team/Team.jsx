@@ -29,11 +29,6 @@ function Team() {
           <span data-aos="zoom-in"> Year : </span>
           <Select
             className="dropdown"
-            // options={[
-            //   { value: "2022", label: "2022" },
-            //   { value: "2024", label: "2024" },
-            //   { value: "2025", label: "2025" },
-            // ]}
             options={options}
             values={[{ value: year, label: year }]}
             placeholder={year}

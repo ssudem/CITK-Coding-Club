@@ -24,9 +24,10 @@ function AboutUs(props) {
         >
           <Image
             src={aboutImg}
-            placeholder={placeholder}
             alt="About Us"
             lazy={true}
+            placeholder={placeholder}
+            blur={2}
           />
         </div>
         <div className="about">

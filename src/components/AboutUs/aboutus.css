@@ -54,7 +54,8 @@
 }
 
 .about-img {
-  max-width: 380px;
+  height: 380px;
+  width: 380px;
   border-radius: 1.5rem;
 }
 
@@ -85,7 +86,8 @@
     line-height: 1.4;
   }
   .about-img {
-    max-width: max(300px, 60vw);
+    height: max(300px, 40vw);
+    width: max(300px, 40vw);
   }
   .about > button {
     padding: 0.5rem 1rem;

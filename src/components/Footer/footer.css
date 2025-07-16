@@ -1,9 +1,11 @@
 .footer {
   background-color: #1f2937;
   width: 100%;
+  height: fit-content;
 }
 
 .footer-grid {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   padding: 2rem 1rem;
@@ -11,10 +13,26 @@
 }
 
 .footer-heading {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4rem;
+}
+.footer-heading > span {
   font-size: 1.1rem;
   font-weight: bold;
   /* padding-bottom: 1rem; */
   color: white;
+}
+
+.footer-heading > li > a > svg {
+  padding-top: 0.3rem;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.2);
+    color: aquamarine;
+  }
 }
 
 .footer-contact,
@@ -31,27 +49,36 @@
 }
 .footer-social {
   justify-items: center;
+  align-content: center;
 }
 .footer-contact {
-  /* margin-left: 4rem; */
   justify-items: start;
 }
 
+.footer-social > h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 1rem;
+}
 .footer-text {
   color: #d1d5db;
-  margin-bottom: 0.7rem;
+  /* margin-bottom: 0.7rem; */
   font-size: 1rem;
 }
 
-.social-icons {
+.social-icon {
+  width: 100%;
   display: flex;
-  gap: 2rem;
   list-style: none;
   padding: 0;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
 }
 
-.social-icons > li > a {
+.social-icon > li > a {
   display: flex;
   align-items: center;
   gap: 0.2rem;
@@ -96,7 +123,7 @@
   border-top: 1px solid #4b5563;
   padding: 0.7rem;
   text-align: center;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   color: #d1d5db;
   font-size: 0.95rem;
 }
@@ -106,16 +133,14 @@
   .footer-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem 0 1rem;
+    /* padding-bottom: none; */
     gap: 1rem;
   }
   .footer {
     padding: 1rem 0.5rem;
   }
-  .footer-heading {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
+
   .footer-text {
     font-size: 0.95rem;
     margin-bottom: 0.5rem;
@@ -126,9 +151,14 @@
   .footer-bottom {
     font-size: 0.9rem;
     padding: 0.5rem;
-    margin-top: 0.7rem;
   }
-  .social-icons {
+  .social-icon {
     gap: 0.5rem;
+  }
+
+  .footer-heading > li > a > svg {
+    padding-top: 0.3rem;
+    transition: none;
+    color: aqua;
   }
 }

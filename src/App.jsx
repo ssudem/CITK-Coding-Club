@@ -20,19 +20,10 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, [pathname]);
 
   return null;
-}
-function AOSsetup() {
-  const timeout = setTimeout(() => {
-    AOS.init({
-      once: true,
-    });
-  }, 200);
-
-  return () => clearTimeout(timeout);
 }
 
 const router = createBrowserRouter([
@@ -87,13 +78,9 @@ const router = createBrowserRouter([
 
 function App() {
   useEffect(() => {
-    AOSsetup();
+    setTimeout(() => AOS.init({ once: true }), 400);
   }, []);
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

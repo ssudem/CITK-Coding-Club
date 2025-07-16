@@ -38,6 +38,11 @@
   &:hover::before {
     height: 100%;
   }
+
+  &:hover {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    transform: scale(1.04) !important;
+  }
 }
 
 .profile-card {
@@ -108,18 +113,20 @@
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 1rem;
-  width: 100%;
+  /* gap: 1rem; */
+  width: 80%;
   font-size: min(1.5rem, 5vw);
 }
 
-.social-icons svg:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.5);
-  color: rgb(159, 228, 255);
+.social-icons > a {
+  transition: transform 0.3s ease;
   cursor: pointer;
+  &:hover {
+    transform: scale(1.5);
+    color: rgb(159, 228, 255);
+  }
 }
 
 @media screen and (max-width: 600px) {

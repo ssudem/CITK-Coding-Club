@@ -7,7 +7,6 @@ import personPlaceHolder from "../../assets/PlaceHolder/person-placeholder.avif"
 import {
   FaTwitter,
   FaInstagram,
-  FaDribbble,
   FaLinkedin,
   FaGithub,
   FaEnvelope,
