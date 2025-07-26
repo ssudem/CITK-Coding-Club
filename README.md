@@ -23,4 +23,4 @@ This website serves as the digital hub for the Coding Club, providing informatio
 
 - **Frontend:** ReactJS
 - **Styling:** CSS
-- **Build Tool:** Parcel
+- **Build Tool:** Parcel, Vite

@@ -1,4 +1,4 @@
-import "./eventCard.css";
+import "./eventcard.css";
 
 import Image from "../Image/Image.jsx";
 
