@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProfileCard.css";
+import "./profilecard.css";
 
 import Image from "../Image/Image.jsx";
 // import personPlaceHolder from "../../assets/PlaceHolder/person-placeholder.avif";
