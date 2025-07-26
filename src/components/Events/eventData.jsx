@@ -25,147 +25,144 @@ import E2image from "../../assets/EventImg/E2.webp";
 import E3image from "../../assets/EventImg/E3.webp";
 import E4image from "../../assets/EventImg/E4.avif";
 
+// Past Events :-
+import P1image from "../../assets/EventImg/p1.png";
+import P2image from "../../assets/EventImg/p2.jpeg";
+import P3image from "../../assets/EventImg/p3.png";
+import P4image from "../../assets/EventImg/p4.jpeg";
+import P5image from "../../assets/EventImg/p5.jpeg";
+import P6image from "../../assets/EventImg/p6.png";
+
+//  eventDate ="DD/MM/YYYY" and  eventTime = "7:30 pm" (Format)
+function isRegistrationOpen(eventDate, eventTime) {
+  // Parse DD/MM/YYYY format
+  const [day, month, year] = eventDate.split("/").map(Number);
+
+  // Parse time (format: "h:mm am/pm")
+  const [time, period] = eventTime.split(" ");
+  let [hours, minutes] = time.split(":").map(Number);
+
+  // Convert to 24-hour format
+  if (period.toLowerCase() === "pm" && hours !== 12) {
+    hours += 12;
+  } else if (period.toLowerCase() === "am" && hours === 12) {
+    hours = 0;
+  }
+
+  // Create event datetime (month-1 because JS months are 0-indexed)
+  const eventStart = new Date(year, month - 1, day, hours, minutes || 0);
+  const registrationDeadline = new Date(eventStart.getTime() - 60 * 60 * 1000); // 1 hour before
+  const now = new Date();
+
+  return now < registrationDeadline;
+}
+
 const event = {
   recent: [
     {
-      registeration: true,
-      registerationLink:
-        "https://docs.google.com/forms/d/e/1FAIpQLSeCeAzi_wN8gMCQCszpqb5aElRVG8sT1RXD1EIeDtrlBpc9LQ/viewform", // (link not explicitly given)
       Eventimage: E4image,
-      Eventdate: "18 July 2025", // (year not in image)
+      Eventdate: "18th July 2025",
       medium: "Google meet",
-      time: "7:30 pm", // (end time unspecified)
+      time: "7:30pm - 8:30pm",
       title:
         "Debug Dialogues with Nipnil Raj Deka | An interactive session with tech experts from industry & academia!",
+      get registeration() {
+        return isRegistrationOpen("18/7/2025", "7:30 pm");
+      },
+      registerationLink:
+        "https://docs.google.com/forms/d/e/1FAIpQLSeCeAzi_wN8gMCQCszpqb5aElRVG8sT1RXD1EIeDtrlBpc9LQ/viewform",
     },
     {
-      registeration: false,
       // registerationLink: "https://www.google.com",
       Eventimage: E3image,
       Eventdate: "8th April 2025",
       medium: "Google meet",
-      time: "7:00pm - 8:00 pm",
+      time: "7:00pm - 8:00pm",
       title:
         "Debug Dialouges with Ahmed Abid | An interactive session where we bring insiring minds from the tech world to your screen!",
+      get registeration() {
+        return isRegistrationOpen("8/4/2025", "7:00 pm");
+      },
     },
     {
-      registration: false,
       Eventimage: E2image,
       Eventdate: "12th October 2024",
       medium: "CSE Lab 2",
-      time: "4:00pm - 5:00 pm",
+      time: "4:00pm - 5:00pm",
       title:
         " Weekly Problem Solving Coding Session | A dynamic,hands-on experience where you can learn,solve and grow together",
+      get registeration() {
+        return isRegistrationOpen("12/10/2024", "4:00 pm");
+      },
     },
     {
-      registration: false,
       Eventimage: E1image,
       Eventdate: "20th Sep 2024",
       medium: "BKB Seminar Hall",
-      time: "4:00pm - 5:30 pm",
+      time: "4:00pm - 5:30pm",
       title:
         "Orientation Program of Coding Club CITK | Join us and be a part of a vibrant community that codes ,creates and collaborates!",
+      get registeration() {
+        return isRegistrationOpen("20/09/2024", "4:00 pm");
+      },
     },
   ],
   past: [
     {
       registeration: false,
-      Eventimage: E1image,
-      Eventdate: "5th May 2025",
+      Eventimage: P5image,
+      Eventdate: "5th & 6th Nov 2022",
+      medium: "Offline",
+      time: "10:00 AM onwards",
+      title:
+        "An immersive hands-on Python programming workshop led by an Amazon SDE, designed to build foundational and advanced skills.",
+    },
+
+    {
+      registeration: false,
+      Eventimage: P6image,
+      Eventdate: "4 November 2022",
       medium: "Online",
-      time: "6:00pm - 7:30 pm",
+      time: "05:20 PM - 6:30 PM",
       title:
-        "Introduction to Blockchain Technology | Discover the basics of blockchain and its applications in the modern world.",
+        "Explore modern web development in this insightful webinar series with Dr. Amit Datta, a Senior Architect from Cognizant.",
     },
     {
       registeration: false,
-      Eventimage: E2image,
-      Eventdate: "8th April 2025",
-      medium: "Google meet",
-      time: "7:00pm - 8:00 pm",
-      title:
-        "Debug Dialouges with Ahmed Abid | An interactive session where we bring insiring minds from the tech world to your screen!",
-    },
-    {
-      registeration: false,
-      Eventimage: E3image,
-      Eventdate: "12th March 2025",
-      medium: "Auditorium",
-      time: "5:00pm - 7:00 pm",
-      title:
-        "Annual Coding Marathon | Test your coding skills in a 2-hour marathon with exciting prizes!",
-    },
-    {
-      registeration: false,
-      Eventimage: E2image,
-      Eventdate: "28th Feb 2025",
+      Eventimage: P3image,
+      Eventdate: "4th week January, 2023",
       medium: "Online",
-      time: "6:00pm - 7:30 pm",
+      time: "07:00 PM - 08:30 PM",
       title:
-        "Web Development Bootcamp | Learn the basics of web development in this interactive session.",
+        "An exclusive live webinar on Data Structures and Algorithms, presented by a seasoned expert from GeeksforGeeks.",
     },
     {
       registeration: false,
-      Eventimage: E3image,
-      Eventdate: "15th Feb 2025",
+      Eventimage: P1image,
+      Eventdate: "from 30th April, 2022",
+      medium: "Offline",
+      time: "1:00 PM - 3:00 PM",
+      title:
+        "A comprehensive 36-hour bootcamp covering all fundamental concepts of the C programming language from scratch for beginners.",
+    },
+    {
+      registeration: false,
+      Eventimage: P4image,
+      Eventdate: "20th September, 2022",
       medium: "Google meet",
-      time: "7:00pm - 8:30 pm",
+      time: "10:30 AM - 12:30 PM",
       title:
-        "Tech Talk: Future of AI | Explore the advancements and future scope of Artificial Intelligence.",
+        "A welcoming introductory session for new members on 'Getting Started with Coding,' covering the essential first steps.",
     },
+
     {
       registeration: false,
-      Eventimage: E1image,
-      Eventdate: "2nd Feb 2025",
-      medium: "CSE Lab 1",
-      time: "3:00pm - 5:00 pm",
-      title:
-        "Hands-on Python Workshop | Get started with Python programming with practical examples.",
-    },
-    {
-      registeration: false,
-      Eventimage: E2image,
-      Eventdate: "20th Jan 2025",
-      medium: "Seminar Hall",
-      time: "4:00pm - 6:00 pm",
-      title:
-        "UI/UX Design Principles | Learn the fundamentals of designing user-friendly interfaces.",
-    },
-    {
-      registeration: false,
-      Eventimage: E3image,
-      Eventdate: "10th Jan 2025",
-      medium: "Google meet",
-      time: "5:00pm - 6:30 pm",
-      title:
-        "Competitive Programming 101 | Tips and tricks to excel in coding competitions.",
-    },
-    {
-      registeration: false,
-      Eventimage: E1image,
-      Eventdate: "25th Dec 2024",
-      medium: "Online",
-      time: "6:00pm - 7:00 pm",
-      title:
-        "Holiday Hackathon | Collaborate and build fun projects during the holidays.",
-    },
-    {
-      registeration: false,
-      Eventimage: E2image,
-      Eventdate: "10th Dec 2024",
+      Eventimage: P2image,
+      Eventdate: "16th September, 2022",
       medium: "BKB Seminar Hall",
-      time: "4:00pm - 5:30 pm",
+      time: "4:00 PM onwards",
       title:
-        "Career Guidance Session | Get insights from industry experts on tech careers.",
-    },
-    {
-      registeration: false,
-      Eventimage: E3image,
-      Eventdate: "1st Dec 2024",
-      medium: "Google meet",
-      time: "7:00pm - 8:00 pm",
-      title:
-        "Debugging Best Practices | Learn how to debug your code efficiently.",
+        "The official orientation cum joining session for the new 2022 batch to introduce them to the Coding Club.",
     },
   ],
 };

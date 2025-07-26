@@ -29,9 +29,9 @@
 .footer-heading > li > a > svg {
   padding-top: 0.3rem;
   transition: all 0.3s ease;
+  color: aqua;
   &:hover {
     transform: scale(1.2);
-    color: aquamarine;
   }
 }
 
@@ -94,7 +94,7 @@
 }
 
 .facebook {
-  color: #38bdf8;
+  color: #388bff;
 }
 
 .twitter {
@@ -102,11 +102,11 @@
 }
 
 .instagram {
-  color: #f97316;
+  color: #ff53dade;
 }
 
 .github {
-  color: #f97316;
+  color: #99ddffac;
 }
 
 .social-link {
@@ -114,10 +114,6 @@
   text-decoration: none;
   font-size: 1rem;
 }
-
-/* .social-link:hover {
-  text-decoration: underline;
-} */
 
 .footer-bottom {
   border-top: 1px solid #4b5563;
@@ -159,6 +155,5 @@
   .footer-heading > li > a > svg {
     padding-top: 0.3rem;
     transition: none;
-    color: aqua;
   }
 }

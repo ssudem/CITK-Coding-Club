@@ -2,6 +2,8 @@ import "./home.css";
 import HomeSlider from "../HomeSlider/HomeSlider.jsx";
 import { useNavigate } from "react-router-dom";
 
+import placeholder from "../../assets/PlaceHolder/code-placeholder.avif";
+
 function Home() {
   const isMobileView = window.innerWidth <= 768; // Check if the view is mobile
   const delay = isMobileView ? 600 : 1000;
@@ -45,7 +47,7 @@ function Home() {
           data-aos={isMobileView ? "fade-right" : "fade-down"}
           data-aos-duration={delay}
         >
-          <HomeSlider />
+          <HomeSlider placeholder={placeholder} />
         </div>
       </div>
     </section>

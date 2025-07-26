@@ -2,7 +2,7 @@ import React from "react";
 import "./ProfileCard.css";
 
 import Image from "../Image/Image.jsx";
-import personPlaceHolder from "../../assets/PlaceHolder/person-placeholder.avif";
+// import personPlaceHolder from "../../assets/PlaceHolder/person-placeholder.avif";
 
 import {
   FaTwitter,
@@ -12,7 +12,13 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-const ProfileCard = ({ image, name, title, socialmedia }) => {
+const ProfileCard = ({
+  image,
+  name,
+  title,
+  socialmedia,
+  personPlaceHolder,
+}) => {
   return (
     <div className="card-container" data-aos="zoom-in">
       <div className="profile-card">
@@ -24,6 +30,7 @@ const ProfileCard = ({ image, name, title, socialmedia }) => {
             placeholder={personPlaceHolder}
             alt="Image"
             lazy={true}
+            blur={3}
           />
         </div>
         <h2 className="name">{name}</h2>

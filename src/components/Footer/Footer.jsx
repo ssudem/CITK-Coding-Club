@@ -60,13 +60,13 @@ function Footer() {
           <h2>Follow Us</h2>
           <ul className="social-icon">
             <li>
-              <a href="#" className="social-link">
+              <a href="https://www.facebook.com/" className="social-link">
                 <FaFacebook className="icon facebook" />
                 <span>Facebook</span>
               </a>
             </li>
             <li>
-              <a href="#" className="social-link">
+              <a href="https://x.com/" className="social-link">
                 <FaTwitter className="icon twitter" />
                 Twitter
               </a>
@@ -82,7 +82,10 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="social-link">
+              <a
+                href="https://github.com/ssudem/CITK-Coding-Club"
+                className="social-link"
+              >
                 <FaGithub className="icon github" />
                 Github
               </a>

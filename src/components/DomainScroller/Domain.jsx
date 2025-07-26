@@ -31,7 +31,7 @@ function Domain() {
       <h1 data-aos="zoom-in-down" style={{ textAlign: "center" }}>
         OUR DOMAIN
       </h1>
-      <p data-aos="zoom-in-down">
+      <p data-aos="zoom-out-up">
         We cover most of the domain of programming like competitive programming,
         development related field, etc. We are making small teams on every
         domain so that we can grow in each and every domain.
@@ -39,7 +39,7 @@ function Domain() {
       {isMobile ? (
         <div
           className="domain-container"
-          data-aos="zoom-in-down"
+          data-aos="zoom-in"
           data-aos-duration="500"
         >
           <DomainScroller
@@ -58,7 +58,7 @@ function Domain() {
       ) : (
         <div
           className="domain-container"
-          data-aos="zoom-in-down"
+          data-aos="zoom-in"
           data-aos-duration="800"
         >
           <DomainScroller

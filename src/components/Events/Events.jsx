@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import EventCard from "../EventCard/EventCard.jsx";
 import "./events.css";
 import event from "./eventData.jsx";
+import EventPlaceHolder from "../../assets/PlaceHolder/img-placeholder.avif";
 
 function Events() {
   const [activeTab, setActiveTab] = useState("recent");
@@ -40,7 +41,11 @@ function Events() {
         </div>
         <div className="event-container">
           {event[activeTab].map((ev, idx) => (
-            <EventCard key={activeTab + "-" + idx} {...ev} />
+            <EventCard
+              key={activeTab + "-" + idx}
+              {...ev}
+              EventPlaceHolder={EventPlaceHolder}
+            />
           ))}
         </div>
       </div>

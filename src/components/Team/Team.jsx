@@ -4,6 +4,7 @@ import ProfileCard from "../ProfileCard/ProfileCard.jsx";
 import "./team.css";
 
 import team from "./teamdata.jsx"; // Import the team data
+import personPlaceHolder from "../../assets/PlaceHolder/person-placeholder.avif";
 
 function Team() {
   const [year, setYear] = useState("2024");
@@ -46,6 +47,7 @@ function Team() {
               name={member.name}
               title={member.title}
               socialmedia={member.socialmedia}
+              personPlaceHolder={personPlaceHolder}
             />
           ))}
         </div>

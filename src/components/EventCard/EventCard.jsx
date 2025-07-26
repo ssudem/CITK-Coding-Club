@@ -1,7 +1,6 @@
 import "./eventCard.css";
 
 import Image from "../Image/Image.jsx";
-import EventPlaceHolder from "../../assets/PlaceHolder/img-placeholder.avif";
 
 const EventCard = (event) => {
   const isMobileView = window.innerWidth <= 768; // Check if the view is mobile
@@ -15,7 +14,7 @@ const EventCard = (event) => {
         <Image
           className="event-image"
           src={event.Eventimage}
-          placeholder={EventPlaceHolder}
+          placeholder={event.EventPlaceHolder}
           alt="Event"
           lazy={true}
         />

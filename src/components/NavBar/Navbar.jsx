@@ -8,7 +8,7 @@ import citklogo from "../../assets/citklogo.png"; // adjust the path as needed
 import CClogo from "../../assets/CClogo.png"; // adjust the path as needed
 
 import Image from "../Image/Image.jsx";
-import placeholder from "../../assets/PlaceHolder/code-placeholder.webp";
+import placeholder from "../../assets/PlaceHolder/code-placeholder.avif";
 
 function Navbar() {
   const menuRef = useRef();

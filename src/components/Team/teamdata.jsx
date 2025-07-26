@@ -10,7 +10,6 @@
         twitter: "#",
         linkedin: "#",
         github: "#",
-        gmail:""
         gmail: "#",
       },
 */
@@ -22,10 +21,11 @@ import mayuri from "../../assets/PeopleImg/Y2024/MAYURI_BAYAN.jpg";
 import mohd from "../../assets/PeopleImg/Y2024/MOHD_ZAID.webp";
 import nabadeep from "../../assets/PeopleImg/Y2024/nabadeep_das.jpg";
 import parinita from "../../assets/PeopleImg/Y2024/PARINITA_RAY.webp";
-import samujjal from "../../assets/PeopleImg/Y2024/SAMUJJAL_DUTTA.jpeg";
+import samujjal from "../../assets/PeopleImg/Y2024/SAMUJJAL_DUTTA.avif";
 import deepjyoti from "../../assets/PeopleImg/Y2024/DEEPJYOTI_DUTTA.jpg";
 import rohit from "../../assets/PeopleImg/Y2024/Rohit_Gupta.jpg";
 import tushar from "../../assets/PeopleImg/Y2024/tushar.jpeg";
+import sanjukta from "../../assets/PeopleImg/Y2024/Sanjukta.jpeg";
 
 //2022:-
 import amitava from "../../assets/PeopleImg/Y2022/amitava.jpg";
@@ -377,6 +377,16 @@ const team = {
           "https://www.linkedin.com/in/parinita-ray-5ba9b3340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "https://github.com/ParinitaRay",
         gmail: "u23cse1063@cit.ac.in",
+      },
+    },
+    {
+      image: sanjukta,
+      name: "Sanjukta Debnath",
+      title: "Coordinator",
+      socialmedia: {
+        instagram: "https://www.instagram.com/bliss_0_0/",
+        linkedin: "https://www.linkedin.com/in/sanjukta-d-1676a22a9",
+        gmail: "sanjuktadebnath03@gmail.com",
       },
     },
     {
