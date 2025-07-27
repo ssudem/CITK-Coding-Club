@@ -117,7 +117,7 @@
   align-items: center;
   /* gap: 1rem; */
   width: 80%;
-  font-size: min(1.5rem, 5vw);
+  font-size: min(1.5rem, 6vw);
 }
 
 .social-icons > a {
@@ -135,7 +135,7 @@
     gap: 0.8rem;
   }
   .social-icons {
-    width: 70%;
+    width: 80%;
     justify-content: space-evenly;
   }
   .name {
