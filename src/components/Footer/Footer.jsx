@@ -1,7 +1,7 @@
 // Footer.jsx
 import React from "react";
 import {
-  FaFacebook,
+  FaLinkedin,
   FaTwitter,
   FaInstagram,
   FaGithub,
@@ -34,7 +34,7 @@ function Footer() {
                     target={isMobile ? "_self" : "_blank"}
                     rel="noopener noreferrer"
                   >
-                    <FaEnvelope />
+                    <FaEnvelope className="_Email" />
                   </a>
                 );
               })()}
@@ -46,7 +46,7 @@ function Footer() {
             <span> Address : </span>
             <li>
               <a href={citkLoaction} target="_blank">
-                <IoLocationSharp />
+                <IoLocationSharp className="_location" />
               </a>
             </li>
           </h2>
@@ -60,9 +60,13 @@ function Footer() {
           <h2>Follow Us</h2>
           <ul className="social-icon">
             <li>
-              <a href="https://www.facebook.com/" className="social-link">
-                <FaFacebook className="icon facebook" />
-                <span>Facebook</span>
+              <a
+                href="https://www.linkedin.com/company/coding-club-citk/"
+                className="social-link"
+                target="_blank"
+              >
+                <FaLinkedin className="icon linkedin" />
+                <span>LinkedIn</span>
               </a>
             </li>
             <li>
@@ -73,7 +77,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/codingclubcitk?igsh=bXcxaW5qMzJkNGNw"
+                href="https://www.instagram.com/codingclubcitk/"
                 className="social-link"
                 target="_blank"
               >

@@ -29,7 +29,7 @@
 .footer-heading > li > a > svg {
   padding-top: 0.3rem;
   transition: all 0.3s ease;
-  color: aqua;
+  /* color: aqua; */
   &:hover {
     transform: scale(1.2);
   }
@@ -93,8 +93,8 @@
   font-size: 1.1rem;
 }
 
-.facebook {
-  color: #388bff;
+.linkedin {
+  color: #77b7ff;
 }
 
 .twitter {
@@ -107,6 +107,13 @@
 
 .github {
   color: #99ddffac;
+}
+
+._Email {
+  color: #ff8f66;
+}
+._location {
+  color: aqua;
 }
 
 .social-link {
