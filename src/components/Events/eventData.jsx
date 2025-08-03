@@ -95,6 +95,8 @@ const event = {
         return isRegistrationOpen("12/10/2024", "4:00 pm");
       },
     },
+  ],
+  past: [
     {
       Eventimage: E1image,
       Eventdate: "20th Sep 2024",
@@ -102,12 +104,17 @@ const event = {
       time: "4:00pm - 5:30pm",
       title:
         "Orientation Program of Coding Club CITK | Join us and be a part of a vibrant community that codes ,creates and collaborates!",
-      get registeration() {
-        return isRegistrationOpen("20/09/2024", "4:00 pm");
-      },
+      registeration: false,
     },
-  ],
-  past: [
+    {
+      registeration: false,
+      Eventimage: P3image,
+      Eventdate: "4th week January, 2023",
+      medium: "Online",
+      time: "07:00 PM - 08:30 PM",
+      title:
+        "An exclusive live webinar on Data Structures and Algorithms, presented by a seasoned expert from GeeksforGeeks.",
+    },
     {
       registeration: false,
       Eventimage: P5image,
@@ -127,15 +134,7 @@ const event = {
       title:
         "Explore modern web development in this insightful webinar series with Dr. Amit Datta, a Senior Architect from Cognizant.",
     },
-    {
-      registeration: false,
-      Eventimage: P3image,
-      Eventdate: "4th week January, 2023",
-      medium: "Online",
-      time: "07:00 PM - 08:30 PM",
-      title:
-        "An exclusive live webinar on Data Structures and Algorithms, presented by a seasoned expert from GeeksforGeeks.",
-    },
+
     {
       registeration: false,
       Eventimage: P1image,
