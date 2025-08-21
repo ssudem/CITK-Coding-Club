@@ -39,6 +39,11 @@ section {
   overflow-x: hidden;
 }
 
+.container {
+  max-width: 95rem;
+  margin: auto;
+}
+
 @keyframes animate-gradient {
   0% {
     background-position: 0%;
