@@ -2,7 +2,7 @@ import "./navbar.css";
 import { IoMenu } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
 import { useState, useEffect, useRef } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 import citklogo from "../../assets/citklogo.png"; // adjust the path as needed
 import CClogo from "../../assets/CClogo.png"; // adjust the path as needed
@@ -12,9 +12,15 @@ import placeholder from "../../assets/PlaceHolder/code-placeholder.avif";
 
 function Navbar() {
   const menuRef = useRef();
+  const navigate = useNavigate();
   // Check if the current page is home
   const location = useLocation();
   const isHome = location.pathname === "/";
+  function handleLogoClick() {
+    if (!isHome) {
+      navigate("/");
+    }
+  }
 
   const isMobileView = window.innerWidth <= 768; // Check if the view is mobile
 
@@ -64,17 +70,10 @@ function Navbar() {
               : null)}
           >
             <Image
+              onClick={handleLogoClick}
               src={CClogo}
               placeholder={placeholder}
               alt={`CC`}
-              lazy={true}
-              blur={1}
-            />
-            <span>X</span>
-            <Image
-              src={citklogo}
-              placeholder={placeholder}
-              alt={`CITK`}
               lazy={true}
               blur={1}
             />

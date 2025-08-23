@@ -8,7 +8,8 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: flex-start;
+  padding-left: min(4rem, 4vw);
 
   user-select: none;
   -webkit-user-drag: none;
@@ -17,8 +18,9 @@
 .logo > img:first-child {
   height: 4rem;
   width: auto;
+  cursor: pointer;
 }
-.logo > img:last-child {
+/* .logo > img:last-child {
   height: 2.7rem;
 
   width: auto;
@@ -26,7 +28,7 @@
 .logo > span {
   color: black;
   font-weight: 700;
-}
+} */
 /* ------ */
 .nav-NavLinks > li {
   height: 100%;

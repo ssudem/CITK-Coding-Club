@@ -59,7 +59,7 @@ function Domain() {
         <div
           className="domain-container"
           data-aos="zoom-in"
-          data-aos-duration="800"
+          data-aos-duration="600"
         >
           <DomainScroller
             images={imagesToShow}
