@@ -20,7 +20,7 @@
     },  
 */
 // Recent Events :-
-import E1image from "../../assets/EventImg/E1.webp";
+import E1image from "../../assets/EventImg/Pritam_Prasad_DDS3.webp";
 import E2image from "../../assets/EventImg/E2.webp";
 import E3image from "../../assets/EventImg/E3.webp";
 import E4image from "../../assets/EventImg/E4.avif";
@@ -32,6 +32,7 @@ import P3image from "../../assets/EventImg/p3.png";
 import P4image from "../../assets/EventImg/p4.jpeg";
 import P5image from "../../assets/EventImg/p5.jpeg";
 import P6image from "../../assets/EventImg/p6.png";
+import P7image from "../../assets/EventImg/E1.webp";
 
 //  eventDate ="DD/MM/YYYY" and  eventTime = "7:30 pm" (Format)
 function isRegistrationOpen(eventDate, eventTime) {
@@ -90,15 +91,26 @@ const event = {
       medium: "CSE Lab 2",
       time: "4:00pm - 5:00pm",
       title:
-        " Weekly Problem Solving Coding Session | A dynamic,hands-on experience where you can learn,solve and grow together",
+        "Weekly Problem Solving Coding Session | A dynamic,hands-on experience where you can learn,solve and grow together",
       get registeration() {
         return isRegistrationOpen("12/10/2024", "4:00 pm");
+      },
+    },
+    {
+      Eventimage: E1image,
+      Eventdate: "30th August 2025",
+      medium: "Google meet",
+      time: "7:30pm - 8:30pm",
+      title:
+        "Debug Dialogues: Session 03 with Pritam Prasad | Exploring Scalable Backend Systems, Design Principles, and Industry Insights",
+      get registeration() {
+        return isRegistrationOpen("30/08/2025", "7:30 pm");
       },
     },
   ],
   past: [
     {
-      Eventimage: E1image,
+      Eventimage: P7image,
       Eventdate: "20th Sep 2024",
       medium: "BKB Seminar Hall",
       time: "4:00pm - 5:30pm",
