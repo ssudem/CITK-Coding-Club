@@ -19,7 +19,7 @@
   overflow: hidden;
   -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 
   &::before {
@@ -45,11 +45,11 @@
 }
 
 .profile-card {
-  width: min(19rem, 76vw);
+  width: min(19rem, 78vw);
   height: min(23rem, 85vw);
 
   padding: 2rem 0;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   text-align: center;
 
   border: 10px solid rgb(0, 30, 255);

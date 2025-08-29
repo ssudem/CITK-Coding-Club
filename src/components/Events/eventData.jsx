@@ -61,6 +61,19 @@ function isRegistrationOpen(eventDate, eventTime) {
 const event = {
   recent: [
     {
+      Eventimage: E1image,
+      Eventdate: "30th August 2025",
+      medium: "Google meet",
+      time: "7:30pm - 8:30pm",
+      title:
+        "Debug Dialogues: Session 03 with Pritam Prasad | Exploring Scalable Backend Systems, Design Principles, and Industry Insights",
+      get registeration() {
+        return isRegistrationOpen("30/08/2025", "7:30 pm");
+      },
+      registerationLink:
+        "https://docs.google.com/forms/d/e/1FAIpQLSe0swFYosZhuAS_F42iQrw5rB1JkE6p-x5qaOuFBrvkyvCiEw/viewform",
+    },
+    {
       Eventimage: E4image,
       Eventdate: "18th July 2025",
       medium: "Google meet",
@@ -85,6 +98,8 @@ const event = {
         return isRegistrationOpen("8/4/2025", "7:00 pm");
       },
     },
+  ],
+  past: [
     {
       Eventimage: E2image,
       Eventdate: "12th October 2024",
@@ -92,23 +107,8 @@ const event = {
       time: "4:00pm - 5:00pm",
       title:
         "Weekly Problem Solving Coding Session | A dynamic,hands-on experience where you can learn,solve and grow together",
-      get registeration() {
-        return isRegistrationOpen("12/10/2024", "4:00 pm");
-      },
+      registeration: false,
     },
-    {
-      Eventimage: E1image,
-      Eventdate: "30th August 2025",
-      medium: "Google meet",
-      time: "7:30pm - 8:30pm",
-      title:
-        "Debug Dialogues: Session 03 with Pritam Prasad | Exploring Scalable Backend Systems, Design Principles, and Industry Insights",
-      get registeration() {
-        return isRegistrationOpen("30/08/2025", "7:30 pm");
-      },
-    },
-  ],
-  past: [
     {
       Eventimage: P7image,
       Eventdate: "20th Sep 2024",

@@ -16,11 +16,11 @@ import TeamSlider from "./components/TeamSlider/TeamSlider.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import OurDomain from "./components/DomainScroller/Domain.jsx";
 
-function ScrollToTop() {
+function ScrollToTop({ behavior }) {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
+    window.scrollTo({ top: 0, behavior });
   }, [pathname]);
 
   return null;
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
-        <ScrollToTop />
+        <ScrollToTop behavior={"instant"} />
         <Home />
         <OurDomain />
         <AboutUs isTeam={false} />
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
-        <ScrollToTop />
+        <ScrollToTop behavior={"smooth"} />
         <AboutUs isTeam={true} />
         <Footer />
       </>
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
-        <ScrollToTop />
+        <ScrollToTop behavior={"instant"} />
         <Events />
         <Footer />
       </>
@@ -68,7 +68,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
-        <ScrollToTop />
+        <ScrollToTop behavior={"instant"} />
         <Team />
         <Footer />
       </>

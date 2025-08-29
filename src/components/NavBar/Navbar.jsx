@@ -13,29 +13,38 @@ import placeholder from "../../assets/PlaceHolder/code-placeholder.avif";
 function Navbar() {
   const menuRef = useRef();
   const navigate = useNavigate();
+  const isMobileView = window.innerWidth <= 768; // Check if the view is mobile
+
+  const [isMobile, setIsMobile] = useState(false); // to toggle menu(mobile version)
+  const [scrolled, setScrolled] = useState(false); // to change the header style on scroll
   // Check if the current page is home
   const location = useLocation();
   const isHome = location.pathname === "/";
   function handleLogoClick() {
     if (!isHome) {
       navigate("/");
+    } else if (isHome && scrolled) {
+      // Remove scroll event listener
+      console.log("HI");
+      window.removeEventListener("scroll", onScroll); //onScroll() coming from bottom
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+
+      setTimeout(() => {
+        window.addEventListener("scroll", onScroll);
+      }, 1000);
     }
   }
-
-  const isMobileView = window.innerWidth <= 768; // Check if the view is mobile
-
-  const [isMobile, setIsMobile] = useState(false); // to toggle menu( mobile version)
-  const [scrolled, setScrolled] = useState(false); // to change the header style on scroll
 
   function handleToggle() {
     setIsMobile(!isMobile);
   }
 
+  function onScroll() {
+    setScrolled(window.scrollY > 10);
+    setIsMobile(false);
+  }
   useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 10);
-      setIsMobile(false); // Close hamburger menu on scroll
-    };
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);

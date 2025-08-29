@@ -89,6 +89,7 @@ function Footer() {
               <a
                 href="https://github.com/ssudem/CITK-Coding-Club"
                 className="social-link"
+                target="_blank"
               >
                 <FaGithub className="icon github" />
                 Github
