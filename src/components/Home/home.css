@@ -1,9 +1,11 @@
 .home-section {
   background: rgba(255, 255, 255, 1);
   background: linear-gradient(
-    358deg,
-    rgba(255, 255, 255, 1),
-    rgba(214, 216, 255, 1)
+    360deg,
+    rgba(214, 216, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(214, 216, 255, 1) 100%
   );
   width: 100%;
 }
@@ -17,7 +19,7 @@
   box-sizing: border-box;
   height: auto;
 
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .welcome {

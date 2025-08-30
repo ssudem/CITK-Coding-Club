@@ -1,6 +1,12 @@
 .about-section {
   width: 100%;
-  background-color: #f5f5f5;
+  background: linear-gradient(
+    15deg,
+    rgba(214, 216, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(214, 216, 255, 1) 100%
+  );
 }
 
 .about-container {

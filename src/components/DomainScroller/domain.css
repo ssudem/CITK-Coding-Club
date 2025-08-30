@@ -3,9 +3,8 @@
   background: radial-gradient(
     circle,
     rgba(255, 255, 255, 1),
-    rgba(214, 216, 255, 0.36)
+    rgba(214, 216, 255, 0.719)
   );
-  width: 100%;
   padding: 2rem 0;
 }
 .ourdomain > h1 {
@@ -26,7 +25,6 @@
 .domain-container {
   max-width: 90rem;
   margin: auto;
-
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.52) 0%,
