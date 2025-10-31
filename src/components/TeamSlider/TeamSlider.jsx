@@ -24,7 +24,7 @@ function TeamSlider() {
 
   return (
     <section className="home-team-section">
-      <div className="container home-team-container">
+      <div className="home-team-container">
         <div className="member-heading">
           <h1 data-aos="zoom-in-right" data-aos-duration="800">
             TEAM MEMBERS {year}

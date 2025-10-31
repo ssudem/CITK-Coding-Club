@@ -57,7 +57,7 @@ function Domain() {
         </div>
       ) : (
         <div
-          className="domain-container"
+          className="container domain-container"
           data-aos="zoom-in"
           data-aos-duration="600"
         >

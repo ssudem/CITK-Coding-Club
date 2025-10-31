@@ -25,7 +25,7 @@ function Navbar() {
       navigate("/");
     } else if (isHome && scrolled) {
       // Remove scroll event listener
-      console.log("HI");
+      // console.log("HI");
       window.removeEventListener("scroll", onScroll); //onScroll() coming from bottom
 
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -70,7 +70,7 @@ function Navbar() {
           : "scrolled"
       }
     >
-      <div className="container">
+      <div className="nav-container">
         <div className="content">
           <div
             className="logo"

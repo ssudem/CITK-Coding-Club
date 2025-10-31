@@ -19,13 +19,11 @@
       title: "write Title 15-20 words",  
     },  
 */
-// Recent Events :-
+//Events images imports :-
 import E1image from "../../assets/EventImg/Pritam_Prasad_DDS3.webp";
-import E2image from "../../assets/EventImg/E2.webp";
-import E3image from "../../assets/EventImg/E3.webp";
 import E4image from "../../assets/EventImg/E4.avif";
-
-// Past Events :-
+import E3image from "../../assets/EventImg/E3.webp";
+import E2image from "../../assets/EventImg/E2.webp";
 import P1image from "../../assets/EventImg/p1.png";
 import P2image from "../../assets/EventImg/p2.jpeg";
 import P3image from "../../assets/EventImg/p3.png";
@@ -33,6 +31,7 @@ import P4image from "../../assets/EventImg/p4.jpeg";
 import P5image from "../../assets/EventImg/p5.jpeg";
 import P6image from "../../assets/EventImg/p6.png";
 import P7image from "../../assets/EventImg/E1.webp";
+import DD4image from "../../assets/EventImg/DD4.webp";
 
 //  eventDate ="DD/MM/YYYY" and  eventTime = "7:30 pm" (Format)
 function isRegistrationOpen(eventDate, eventTime) {
@@ -61,6 +60,19 @@ function isRegistrationOpen(eventDate, eventTime) {
 const event = {
   recent: [
     {
+      Eventimage: DD4image,
+      Eventdate: "31th October 2025",
+      medium: "Google meet",
+      time: "5:00pm - 6:00pm",
+      title:
+        "DDebug Dialogues: Session 04 with Prithwiraj Adhikary | Insights on Finance, Technology, and Career Growth at Morgan Stanley",
+      get registeration() {
+        return isRegistrationOpen("31/10/2025", "5 pm");
+      },
+      registerationLink:
+        "https://docs.google.com/forms/d/e/1FAIpQLSdmqcBTfK4MkT2eIAs9Hi9FQUa9iCuYIoQk9waqUS3WI9LgcA/viewform",
+    },
+    {
       Eventimage: E1image,
       Eventdate: "30th August 2025",
       medium: "Google meet",
@@ -87,7 +99,6 @@ const event = {
         "https://docs.google.com/forms/d/e/1FAIpQLSeCeAzi_wN8gMCQCszpqb5aElRVG8sT1RXD1EIeDtrlBpc9LQ/viewform",
     },
     {
-      // registerationLink: "https://www.google.com",
       Eventimage: E3image,
       Eventdate: "8th April 2025",
       medium: "Google meet",
@@ -95,11 +106,12 @@ const event = {
       title:
         "Debug Dialouges with Ahmed Abid | An interactive session where we bring insiring minds from the tech world to your screen!",
       get registeration() {
-        return isRegistrationOpen("8/4/2025", "7:00 pm");
+        return isRegistrationOpen("18/7/2025", "7:30 pm");
       },
     },
   ],
   past: [
+    ,
     {
       Eventimage: E2image,
       Eventdate: "12th October 2024",

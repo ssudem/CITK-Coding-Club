@@ -13,6 +13,9 @@
     rgba(255, 255, 255, 1) 60%,
     rgba(214, 216, 255, 1) 100%
   );
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -52,6 +55,18 @@
   }
 }
 
+.home-team-container {
+  width: 90%;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 10%,
+    white 90%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+
 .home-team-container > .mySwiper {
   cursor: pointer;
   position: relative;
@@ -84,7 +99,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.95;
+  opacity: 1;
   pointer-events: auto;
   /* transition: background 0.3s ease, transform 0.2s, box-shadow 0.3s; */
   border: none;
@@ -117,14 +132,35 @@
 }
 
 .swiper-button-next {
-  right: 0.5rem;
+  right: 5%;
 }
 
 .swiper-button-prev {
-  left: 0.5rem;
+  left: 5%;
 }
 
 @media screen and (max-width: 768px) {
+  .home-team-container {
+    width: 90%;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 5%,
+      white 90%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 5%, white 90%, transparent);
+  }
+  .swiper-button-next {
+    right: 3%;
+  }
+
+  .swiper-button-prev {
+    left: 3%;
+  }
+  .member-heading {
+    padding: 1rem;
+  }
   .member-heading > button {
     padding: 0.5rem 1rem;
     border-radius: 0.8rem;
@@ -133,7 +169,7 @@
     color: white;
   }
   .home-team-container > .mySwiper {
-    padding: 2rem 3rem;
+    padding: 2rem 1.5rem;
     cursor: default !important;
     -webkit-tap-highlight-color: transparent; /* Removes tap highlight on iOS/Android */
   }

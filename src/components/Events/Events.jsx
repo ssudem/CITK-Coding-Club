@@ -9,7 +9,7 @@ function Events() {
 
   return (
     <section className="event-section">
-      <div className="container event-section-inner">
+      <div className="event-section-inner">
         <h1 data-aos="zoom-out-down" data-aos-duration="500">
           EVENTS & WORKSHOPS
         </h1>

@@ -23,15 +23,15 @@
 }
 
 .welcome {
-  max-width: 32rem;
+  max-width: 40rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
 .welcome > h1 {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 5rem;
+  font-weight: 800;
   text-align: start;
 
   word-spacing: 10px;
@@ -52,7 +52,7 @@
 }
 
 .welcome > p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #333;
   line-height: 1.6;
   text-align: justify;
@@ -73,8 +73,8 @@
 }
 
 .HomeImg {
-  height: min(30vw, 370px);
-  width: min(30vw, 370px);
+  height: min(30vw, 385px);
+  width: min(30vw, 385px);
 }
 
 .HomeImg > img {

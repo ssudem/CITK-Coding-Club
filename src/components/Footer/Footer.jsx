@@ -16,7 +16,7 @@ function Footer() {
     "https://www.google.com/maps/place/Central+Institute+of+Technology,+Kokrajhar/@26.4781091,90.3022867,17.75z/data=!4m6!3m5!1s0x3758f4d277d13e8d:0x233749495bfdb465!8m2!3d26.4780512!4d90.3026385!16s%2Fm%2F0w7kllw?entry=ttu&g_ep=EgoyMDI1MDcwNy4wIKXMDSoASAFQAw%3D%3D";
   return (
     <footer className="footer">
-      <div className="footer-grid container">
+      <div className="footer-grid">
         <div className="footer-contact">
           <h2 className="footer-heading">
             <span>Email : </span>
