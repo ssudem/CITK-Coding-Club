@@ -22,16 +22,17 @@
 .member-heading {
   /* background-color: blue; */
   width: 100%;
+  align-self: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  padding: 1rem 2rem;
+  padding: 1rem 7rem;
 }
 .member-heading > h1 {
   max-width: 60%;
-  font-size: min(2.5rem, 7.5vw);
-  font-weight: 600;
+  font-size: min(2.7rem, 7.5vw);
+  font-weight: 700;
 
   background: linear-gradient(to right, #1a237e 0%, #6600ff 50%, #1a237e 100%);
   background-size: 300%;
@@ -47,6 +48,7 @@
   padding: 0.7rem 1.2rem;
   border-radius: 0.8rem;
   font-size: 1.1rem;
+  font-weight: 650;
   cursor: pointer;
   background-color: rgb(93, 0, 255);
   color: white;
@@ -60,17 +62,17 @@
   -webkit-mask: linear-gradient(
     90deg,
     transparent,
-    white 10%,
-    white 90%,
+    white 4%,
+    white 96%,
     transparent
   );
-  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+  mask: linear-gradient(90deg, transparent, white 4%, white 96%, transparent);
 }
 
 .home-team-container > .mySwiper {
   cursor: pointer;
   position: relative;
-  padding: 3rem 3rem;
+  padding: 3rem 0rem;
 }
 
 .home-team-container > .swiper > .swiper-wrapper > .swiper-slide {
@@ -132,11 +134,11 @@
 }
 
 .swiper-button-next {
-  right: 5%;
+  right: 2%;
 }
 
 .swiper-button-prev {
-  left: 5%;
+  left: 2%;
 }
 
 @media screen and (max-width: 768px) {
@@ -150,6 +152,9 @@
       transparent
     );
     mask: linear-gradient(90deg, transparent, white 5%, white 90%, transparent);
+  }
+  .home-team-container > .mySwiper {
+    padding: 3rem 3rem;
   }
   .swiper-button-next {
     right: 3%;

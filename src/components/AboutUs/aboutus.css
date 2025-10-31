@@ -40,7 +40,8 @@
 }
 
 .about > p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: #333;
   line-height: 1.6;
   text-align: justify;
@@ -53,6 +54,7 @@
   color: white;
   border-radius: 0.4rem;
   cursor: pointer;
+  font-weight: 600;
 
   background: linear-gradient(to right, #1a237e 0%, #802cff 50%, #1a237e 100%);
   background-size: 300%;
