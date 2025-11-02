@@ -59,20 +59,20 @@
 
 .home-team-container {
   width: 90%;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 4%,
-    white 96%,
-    transparent
-  );
-  mask: linear-gradient(90deg, transparent, white 4%, white 96%, transparent);
 }
 
 .home-team-container > .mySwiper {
   cursor: pointer;
   position: relative;
   padding: 3rem 0rem;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 1%,
+    white 99%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 1%, white 99%, transparent);
 }
 
 .home-team-container > .swiper > .swiper-wrapper > .swiper-slide {
@@ -134,11 +134,11 @@
 }
 
 .swiper-button-next {
-  right: 2%;
+  right: 1%;
 }
 
 .swiper-button-prev {
-  left: 2%;
+  left: 1%;
 }
 
 @media screen and (max-width: 768px) {
@@ -147,21 +147,21 @@
     -webkit-mask: linear-gradient(
       90deg,
       transparent,
-      white 5%,
-      white 90%,
+      white 3%,
+      white 95%,
       transparent
     );
-    mask: linear-gradient(90deg, transparent, white 5%, white 90%, transparent);
+    mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
   }
   .home-team-container > .mySwiper {
     padding: 3rem 3rem;
   }
   .swiper-button-next {
-    right: 3%;
+    right: 2%;
   }
 
   .swiper-button-prev {
-    left: 3%;
+    left: 2%;
   }
   .member-heading {
     padding: 1rem;

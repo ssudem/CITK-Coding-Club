@@ -66,7 +66,9 @@ function Navbar() {
     <header
       className={
         isHome
-          ? `${scrolled ? "scrolled" : ""} ${isMobile ? "active-nav" : ""}`
+          ? `${scrolled ? "scrolled" : null} ${isMobile ? "active-nav" : null}`
+          : isMobile
+          ? "active-nav"
           : "scrolled"
       }
     >
@@ -92,7 +94,7 @@ function Navbar() {
             className={isMobile ? "mobile-nav" : "desktop-nav"}
           >
             <ul className="nav-NavLinks">
-              {["", "about", "team", "events"].map((item, index) => (
+              {["", "about", "Team", "Events"].map((item, index) => (
                 <li
                   key={index}
                   onClick={() => setIsMobile(false)}

@@ -21,7 +21,8 @@
   font-weight: 600;
   font-size: min(1.3rem, 5vw);
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
+  letter-spacing: 0.8px;
 }
 
 .react-dropdown-select-input {
@@ -85,6 +86,7 @@
 @media screen and (max-width: 768px) {
   .team-section-inner > p {
     text-align: justify;
+    padding: 1rem 7vw;
   }
   .dropdown-container {
     height: 4rem;

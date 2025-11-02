@@ -45,6 +45,7 @@
 }
 
 .profile-card {
+  letter-spacing: 1px;
   width: min(19rem, 78vw);
   height: min(23rem, 85vw);
 
@@ -101,6 +102,7 @@
   font-size: min(1.5rem, 35vw);
   font-weight: 700;
   padding: 0 2rem;
+
   /* margin-top: 1rem; */
 }
 

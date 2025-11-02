@@ -45,6 +45,7 @@
   color: #333;
   line-height: 1.6;
   text-align: justify;
+  letter-spacing: 1px;
 }
 
 .about > button {

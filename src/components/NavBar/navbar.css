@@ -65,8 +65,10 @@ header {
 }
 
 header.scrolled {
-  box-shadow: rgba(63, 63, 113, 0.25) 0px 13px 27px -5px,
-    rgba(102, 60, 255, 0.455) 0px 8px 16px -8px;
+  /* box-shadow: rgba(63, 63, 113, 0.25) 0px 13px 27px -5px,
+    rgba(102, 60, 255, 0.455) 0px 8px 16px -8px; */
+
+  border-bottom: 1.5px solid purple;
 }
 
 .nav-container {
@@ -94,7 +96,9 @@ nav > ul {
 
 .nav-NavLinks > li > a {
   padding: 0.5rem 1.2rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
   font-family: Arial, Helvetica, sans-serif;
 }
 

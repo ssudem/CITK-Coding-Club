@@ -65,7 +65,7 @@ const event = {
       medium: "Google meet",
       time: "5:00pm - 6:00pm",
       title:
-        "DDebug Dialogues: Session 04 with Prithwiraj Adhikary | Insights on Finance, Technology, and Career Growth at Morgan Stanley",
+        "Debug Dialogues: Session 04 with Prithwiraj Adhikary | Insights on Finance, Technology, and Career Growth at Morgan Stanley",
       get registeration() {
         return isRegistrationOpen("31/10/2025", "5 pm");
       },
