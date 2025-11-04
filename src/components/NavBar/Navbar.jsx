@@ -66,9 +66,11 @@ function Navbar() {
     <header
       className={
         isHome
-          ? `${scrolled ? "scrolled" : null} ${isMobile ? "active-nav" : null}`
+          ? `${scrolled ? "scrolled" : null} ${
+              isMobile ? "active-nav scrolled" : null
+            }`
           : isMobile
-          ? "active-nav"
+          ? "active-nav scrolled"
           : "scrolled"
       }
     >

@@ -164,10 +164,10 @@ nav > ul {
   .nav-NavLinks > .aboutlink > a {
     animation: slideInNavLinksTop 0.8s cubic-bezier(0, 0, 0, 0.98);
   }
-  .nav-NavLinks > .teamlink > a {
+  .nav-NavLinks > .Teamlink > a {
     animation: slideInNavLinksTop 1s cubic-bezier(0, 0, 0, 0.98);
   }
-  .nav-NavLinks > .eventslink > a {
+  .nav-NavLinks > .Eventslink > a {
     animation: slideInNavLinksTop 1.2s cubic-bezier(0, 0, 0, 0.98);
   }
   .hem-menu {
